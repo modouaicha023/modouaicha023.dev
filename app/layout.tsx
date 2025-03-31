@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { Exo_2 } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/navbar";
 
 const font = Exo_2({
   weight: ["400", "700"],
@@ -142,7 +143,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${font.variable} antialiased`}>{children}</body>
+      <body className={`${font.variable} antialiased`}>
+        <Navbar />
+        {children}
+      </body>
       <GoogleAnalytics gaId={process.env.GOOGLE_ANALYTICS_ID || ""} />
     </html>
   );

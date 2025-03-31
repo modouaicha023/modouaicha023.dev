@@ -1,4 +1,4 @@
-import { Project } from "@/types";
+import { Project, NavbarLink } from "@/types";
 
 export const projects: Project[] = [
   {
@@ -80,5 +80,23 @@ export const projects: Project[] = [
       "Sen Coffee is a homepage for a coffee shop. It is a React application styled with Tailwind CSS. The purpose of this homepage is to present the coffee business and its products in an attractive and visually appealing way to potential customers.",
     url: "https://sen-coffee.netlify.app/",
     githubUrl: "https://github.com/modouaicha023/sen-coffee",
+  },
+];
+export const navbarLinks: NavbarLink[] = [
+  {
+    title: "home",
+    href: "/",
+  },
+  {
+    title: "projects",
+    href: "/projects",
+  },
+  {
+    title: "about",
+    href: "/about",
+  },
+  {
+    title: "contact",
+    href: "/contact",
   },
 ];

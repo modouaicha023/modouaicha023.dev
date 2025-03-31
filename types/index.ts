@@ -9,3 +9,8 @@ export interface Project {
   gallery?: string[];
   video?: string;
 }
+
+export interface NavbarLink {
+  title: string;
+  href: string;
+}
