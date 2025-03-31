@@ -1,4 +1,10 @@
 import { Project, NavbarLink } from "@/types";
+import {
+  Contact,
+  GalleryHorizontalEnd,
+  Home,
+  SquareChartGantt,
+} from "lucide-react";
 
 export const projects: Project[] = [
   {
@@ -86,17 +92,21 @@ export const navbarLinks: NavbarLink[] = [
   {
     title: "home",
     href: "/",
+    icon: Home,
   },
   {
     title: "projects",
     href: "/projects",
+    icon: GalleryHorizontalEnd,
   },
   {
     title: "about",
     href: "/about",
+    icon: SquareChartGantt,
   },
   {
     title: "contact",
     href: "/contact",
+    icon: Contact,
   },
 ];

@@ -1,3 +1,5 @@
+import { LucideIcon } from "lucide-react";
+
 export interface Project {
   name: string;
   slug: string;
@@ -13,4 +15,5 @@ export interface Project {
 export interface NavbarLink {
   title: string;
   href: string;
+  icon: LucideIcon;
 }
