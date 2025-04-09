@@ -1,5 +1,8 @@
-import Projects from "@/components/sections/projects";
+import { projects } from "@/constants";
+import { ExternalLink, Github } from "lucide-react";
 import { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Mes Projects | Développeur Full Stack",
@@ -26,9 +29,44 @@ export const metadata: Metadata = {
 
 export default function ProjectsPage() {
   return (
-    <main className="flex flex-col items-center justify-center p-4">
-      <h1 className="text-4xl font-bold mb-4">Modou Aicha Diop</h1>
-      <Projects />
+    <main className="grid grid-cols-3 gap-3 p-10">
+      {projects.map((project, index) => (
+        <div key={index} className="flex flex-col border p-2 rounded-3xl">
+          <div className="relative">
+            <h2 className="">{project?.name}</h2>
+            <div className=""></div>
+            <Image
+              src={project?.coverImage}
+              className="w-[300px] h-[200px] "
+              width={400}
+              height={400}
+              alt={project.name + "| Modou Aicha Diop | @modouaicha023"}
+            />
+          </div>
+
+          <div className="">
+            <div className="">
+              <div className="flex gap-2">
+                {project?.stack?.map((tech, index) => (
+                  <span key={index} className="text-red-300">
+                    {tech}
+                  </span>
+                ))}
+              </div>
+              <div className="flex">
+                <Link href={project?.githubUrl || "#"} target="_blank">
+                  <Github size={16} />
+                </Link>
+                <Link href={project?.url || "#"} target="_blank">
+                  <ExternalLink size={16} />
+                </Link>
+              </div>
+            </div>
+
+            <div className="">{project?.description}</div>
+          </div>
+        </div>
+      ))}
     </main>
   );
 }

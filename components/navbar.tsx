@@ -34,7 +34,7 @@ export default function Navbar() {
   const { isMobile } = useDeviceDetect();
 
   return (
-    <div className="fixed sm:sticky bottom-0 sm:top-0 z-50 w-full sm:flex sm:justify-end sm:px-4 sm:py-2 sm:m-2">
+    <div className="fixed sm:sticky bottom-0 sm:top-0 z-50 w-full sm:flex sm:justify-end sm:px-4 sm:py-2 ">
       {isMobile ? (
         <nav className="flex justify-around items-center w-full py-3 bg-red-100 rounded-t-2xl">
           <Link href={"/"} className="flex flex-col items-center">
@@ -45,7 +45,7 @@ export default function Navbar() {
               height={400}
               className="w-6 h-6 object-fill"
             />
-            <span className="text-xs mt-1">Home</span>
+            {/* <span className="text-xs mt-1">Home</span> */}
           </Link>
 
           {navbarLinks.slice(1).map((link, index) => (

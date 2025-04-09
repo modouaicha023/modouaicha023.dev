@@ -95,14 +95,14 @@ export const navbarLinks: NavbarLink[] = [
     icon: Home,
   },
   {
-    title: "projects",
-    href: "/projects",
-    icon: GalleryHorizontalEnd,
-  },
-  {
     title: "about",
     href: "/about",
     icon: SquareChartGantt,
+  },
+  {
+    title: "projects",
+    href: "/projects",
+    icon: GalleryHorizontalEnd,
   },
   {
     title: "contact",
