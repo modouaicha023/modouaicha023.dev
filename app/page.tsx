@@ -1,5 +1,4 @@
 import Hero from "@/components/sections/hero";
-import Projects from "@/components/sections/projects";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
