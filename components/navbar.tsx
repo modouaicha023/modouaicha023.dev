@@ -36,7 +36,7 @@ export default function Navbar() {
   return (
     <div className="fixed sm:sticky bottom-0 sm:top-0 z-50 w-full sm:flex sm:justify-end sm:px-4 sm:py-2 ">
       {isMobile ? (
-        <nav className="flex justify-around items-center w-full py-3 bg-red-100 rounded-t-2xl">
+        <nav className="flex justify-around items-center w-full py-3  rounded-t-2xl">
           <Link href={"/"} className="flex flex-col items-center">
             <Image
               src="/logo-no-bg.png"
@@ -61,7 +61,7 @@ export default function Navbar() {
           ))}
         </nav>
       ) : (
-        <nav className="flex px-4 gap-x-4 py-2 items-center bg-red-100 rounded-2xl">
+        <nav className="flex px-4 gap-x-4 py-2 items-center rounded-2xl">
           <Link href={"/"}>
             <Image
               src="/logo-no-bg.png"
