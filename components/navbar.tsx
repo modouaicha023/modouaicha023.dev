@@ -3,6 +3,7 @@ import { navbarLinks } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
+import { ThemeToggle } from "./theme-toggle";
 
 function useDeviceDetect() {
   const [isMobile, setIsMobile] = useState(false);
@@ -37,7 +38,10 @@ export default function Navbar() {
     <div className="fixed sm:sticky bottom-0 sm:top-0 z-50 w-full sm:flex sm:justify-end sm:px-4 sm:py-2 ">
       {isMobile ? (
         <nav className="flex justify-around items-center w-full py-3  rounded-t-2xl">
-          <Link href={"/"} className="flex flex-col items-center">
+          <Link
+            href={"/"}
+            className="flex flex-col items-center bg-white p-2 rounded-lg"
+          >
             <Image
               src="/logo-no-bg.png"
               alt="Modou Aicha Diop"
@@ -62,7 +66,7 @@ export default function Navbar() {
         </nav>
       ) : (
         <nav className="flex px-4 gap-x-4 py-2 items-center rounded-2xl">
-          <Link href={"/"}>
+          <Link href={"/"} className="bg-white p-2 rounded-lg">
             <Image
               src="/logo-no-bg.png"
               alt="Modou Aicha Diop, modouaicha023, portfolio"
@@ -82,6 +86,7 @@ export default function Navbar() {
               </Link>
             ))}
           </ul>
+          <ThemeToggle />
         </nav>
       )}
     </div>
