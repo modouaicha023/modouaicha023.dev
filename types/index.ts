@@ -17,3 +17,9 @@ export interface NavbarLink {
   href: string;
   icon: LucideIcon;
 }
+
+export interface SocialLink {
+  title: string;
+  href: string;
+  icon: LucideIcon;
+}

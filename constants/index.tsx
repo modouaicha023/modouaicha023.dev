@@ -1,4 +1,5 @@
-import { Project, NavbarLink } from "@/types";
+import { Icons } from "@/components/icons";
+import { Project, NavbarLink, SocialLink } from "@/types";
 import {
   Contact,
   GalleryHorizontalEnd,
@@ -108,5 +109,33 @@ export const navbarLinks: NavbarLink[] = [
     title: "contact",
     href: "/contact",
     icon: Contact,
+  },
+];
+
+export const socialLinks: SocialLink[] = [
+  {
+    title: "X",
+    href: "https://x.com/modouaicha023",
+    icon: Icons.x,
+  },
+  {
+    title: "GitHub",
+    href: "https://github.com/modouaicha023",
+    icon: Icons.gitHub,
+  },
+  {
+    title: "LinkedIn",
+    href: "https://www.linkedin.com/in/modouaicha023",
+    icon: Icons.linkedIn,
+  },
+  {
+    title: "Youtube",
+    href: "https://www.youtube.com/@modouaicha023",
+    icon: Icons.youTube,
+  },
+  {
+    title: "Instagram",
+    href: "https://www.instagram.com/modouaicha023/",
+    icon: Icons.instagram,
   },
 ];
