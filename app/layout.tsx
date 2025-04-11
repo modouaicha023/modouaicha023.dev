@@ -4,6 +4,8 @@ import { Exo_2 } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
 import { ThemeProvider } from "next-themes";
+import { Analytics } from "@vercel/analytics/react";
+
 const font = Exo_2({
   weight: ["400", "700"],
   variable: "--font-app",
@@ -149,6 +151,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Navbar />
           {children}
+          <Analytics />
         </ThemeProvider>
       </body>
       <GoogleAnalytics gaId={process.env.GOOGLE_ANALYTICS_ID || ""} />
