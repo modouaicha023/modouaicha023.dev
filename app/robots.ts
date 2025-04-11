@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/api/", "/admin/"],
     },
-    sitemap: "https://modouaicha023.dev/sitemap.xml",
+    sitemap: "https://www.modouaicha023.dev/sitemap.xml",
   };
 }
