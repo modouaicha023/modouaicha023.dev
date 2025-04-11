@@ -5,6 +5,7 @@ import "./globals.css";
 import Navbar from "@/components/navbar";
 import { ThemeProvider } from "next-themes";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const font = Exo_2({
   weight: ["400", "700"],
@@ -152,6 +153,7 @@ export default function RootLayout({
           <Navbar />
           {children}
           <Analytics />
+          <SpeedInsights />
         </ThemeProvider>
       </body>
       <GoogleAnalytics gaId={process.env.GOOGLE_ANALYTICS_ID || ""} />
