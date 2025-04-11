@@ -2,7 +2,7 @@ import { projects } from "@/constants";
 import { MetadataRoute } from "next";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = "https://www.lac-rose-project.com";
+  const baseUrl = "https://www.modouaicha023.dev";
   const currentDate = new Date();
 
   const staticPages = ["", "/projects", "/contact", "/about"].map((route) => ({

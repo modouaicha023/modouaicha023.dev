@@ -31,7 +31,7 @@ export async function generateMetadata(props: {
       description:
         project?.description?.substring(0, 160) ||
         "Découvrez des destinations inoubliables et vivez des expériences exceptionnelles.",
-      url: `https://www.lac-rose-project.com/projects/${params.slug}`,
+      url: `https://www.modouaicha023.dev/projects/${params.slug}`,
       images: [
         {
           url: project.coverImage || "/logo.png",
