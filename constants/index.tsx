@@ -1,5 +1,5 @@
 import { Icons } from "@/components/icons";
-import { Project, NavbarLink, SocialLink } from "@/types";
+import { Project, NavbarLink, SocialLink, Stack } from "@/types";
 import {
   Contact,
   GalleryHorizontalEnd,
@@ -117,25 +117,139 @@ export const socialLinks: SocialLink[] = [
     title: "X",
     href: "https://x.com/modouaicha023",
     icon: Icons.x,
+    mobile: "twitter://user?screen_name=modouaicha023",
   },
   {
     title: "GitHub",
     href: "https://github.com/modouaicha023",
     icon: Icons.gitHub,
+    mobile: "github://github.com/modouaicha023",
   },
   {
     title: "LinkedIn",
     href: "https://www.linkedin.com/in/modouaicha023",
     icon: Icons.linkedIn,
+    mobile: "linkedin://in/modouaicha023",
   },
   {
-    title: "Youtube",
+    title: "YouTube",
     href: "https://www.youtube.com/@modouaicha023",
     icon: Icons.youTube,
+    mobile: "youtube://www.youtube.com/@modouaicha023",
   },
   {
     title: "Instagram",
     href: "https://www.instagram.com/modouaicha023/",
     icon: Icons.instagram,
+    mobile: "instagram://user?username=modouaicha023",
+  },
+];
+
+export const stacks: Stack[] = [
+  // --- Languages ---
+  {
+    title: "JavaScript",
+    icon: Icons.javascript,
+  },
+  {
+    title: "TypeScript",
+    icon: Icons.typescript,
+  },
+  {
+    title: "Python",
+    icon: Icons.python,
+  },
+  {
+    title: "Java",
+    icon: Icons.java,
+  },
+  {
+    title: "PHP",
+    icon: Icons.php,
+  },
+  {
+    title: "HTML",
+    icon: Icons.html,
+  },
+  {
+    title: "CSS",
+    icon: Icons.css,
+  },
+
+  // --- Frontend Frameworks ---
+  {
+    title: "React",
+    icon: Icons.react,
+  },
+  {
+    title: "NextJS",
+    icon: Icons.nextJs,
+  },
+  {
+    title: "Vue JS",
+    icon: Icons.vueJs,
+  },
+  {
+    title: "Nuxt",
+    icon: Icons.nuxt,
+  },
+  {
+    title: "Angular",
+    icon: Icons.angular,
+  },
+
+  // --- Backend Frameworks ---
+  {
+    title: "Node",
+    icon: Icons.nodeJS,
+  },
+  {
+    title: "NestJS",
+    icon: Icons.nestJs,
+  },
+
+  // --- Styling ---
+  {
+    title: "Tailwind CSS",
+    icon: Icons.tailwindcss,
+  },
+
+  // --- CMS & Platforms ---
+  {
+    title: "WordPress",
+    icon: Icons.wordpress,
+  },
+
+  // --- DevOps & Tools ---
+  {
+    title: "Docker",
+    icon: Icons.docker,
+  },
+  {
+    title: "AWS",
+    icon: Icons.aws,
+  },
+  {
+    title: "CI/CD",
+    icon: Icons.cicd,
+  },
+
+  {
+    title: "Git",
+    icon: Icons.git,
+  },
+  {
+    title: "Linux",
+    icon: Icons.linux,
+  },
+
+  // --- Databases ---
+  {
+    title: "PostgreSQL",
+    icon: Icons.postgresql,
+  },
+  {
+    title: "MongoDB",
+    icon: Icons.mongodb,
   },
 ];

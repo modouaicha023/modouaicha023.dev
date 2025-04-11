@@ -22,4 +22,10 @@ export interface SocialLink {
   title: string;
   href: string;
   icon: LucideIcon;
+  mobile: string;
+}
+
+export interface Stack {
+  title: string;
+  icon: LucideIcon;
 }
