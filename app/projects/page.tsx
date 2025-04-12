@@ -12,8 +12,8 @@ export default function ProjectsPage() {
           Projects
         </h1>
         <p className="text-base text-zinc-600 dark:text-zinc-400 leading-relaxed max-w-2xl">
-          I've worked on tons of little projects over the years but these are
-          the ones that I'm most proud of.
+          I&apos;ve worked on tons of little projects over the years but these
+          are the ones that I&apos;m most proud of.
         </p>
       </header>
 
