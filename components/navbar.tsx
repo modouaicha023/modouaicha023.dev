@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import { ThemeToggle } from "./theme-toggle";
+import { vibrate } from "@/utils/vibrate";
 
 function useDeviceDetect() {
   const [isMobile, setIsMobile] = useState(false);
@@ -35,9 +36,9 @@ export default function Navbar() {
   const { isMobile } = useDeviceDetect();
 
   return (
-    <div className="fixed sm:sticky bottom-0 sm:top-0 z-50 w-full sm:flex sm:justify-end sm:px-4 sm:py-2 ">
+    <div className="fixed sm:sticky bottom-0 sm:top-0 z-50 w-full sm:flex sm:justify-end sm:px-4 sm:py-2">
       {isMobile ? (
-        <nav className="flex justify-around items-center w-full py-3  rounded-t-2xl">
+        <nav className="flex justify-around bg-[#fce7f6] dark:bg-[#141414] items-center w-full py-3 rounded-t-2xl">
           <Link
             href={"/"}
             className="flex flex-col items-center bg-white p-2 rounded-lg"
@@ -57,12 +58,16 @@ export default function Navbar() {
               href={link.href}
               className="flex flex-col items-center"
               key={index}
+              onClick={() => {
+                if (isMobile) vibrate(200);
+              }}
             >
               {/* <div className="w-6 h-6 flex items-center justify-center"></div> */}
               {<link.icon className="w-4 h-4" />}
               <span className="text-xs mt-1">{link.title}</span>
             </Link>
           ))}
+          <ThemeToggle />
         </nav>
       ) : (
         <nav className="flex px-4 gap-x-4 py-2 items-center rounded-2xl">

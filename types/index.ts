@@ -5,6 +5,7 @@ export interface Project {
   slug: string;
   description: string;
   coverImage: string;
+  logo: string;
   stack: string[];
   url: string;
   githubUrl?: string;

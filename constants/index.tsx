@@ -12,6 +12,7 @@ export const projects: Project[] = [
     name: "Lac Rose Excursion",
     slug: "lac-rose-excursion",
     coverImage: "/projects/lac-rose-excursion.png",
+    logo: "/projects/lac-rose-excursion-logo.jpg",
     stack: ["NextJS", "Tailwind CSS", "TypeScript"],
     description:
       "Lac Rose Excursion est un site web développé avec Next.js, Tailwind CSS, et TypeScript pour une entreprise d'excursions. Il permet de découvrir les excursions proposées et de réserver facilement en ligne.",
@@ -22,6 +23,7 @@ export const projects: Project[] = [
     name: "Game Of Life",
     slug: "game-of-life",
     coverImage: "/projects/game-of-life.png",
+    logo: "/projects/lac-rose-excursion-logo.png",
     stack: ["JavaScript", "HTML", "CSS"],
     description:
       "This is a game called Game of life challenge. The Game of Life, also known simply as Life, is a cellular automaton devised by the British mathematician John Horton Conway in 1970.",
@@ -32,6 +34,8 @@ export const projects: Project[] = [
     name: "Galsen Mangas",
     slug: "galsen-mangas",
     coverImage: "/projects/galsen-mangas.png",
+    logo: "/projects/lac-rose-excursion-logo.png",
+
     stack: ["Next.JS", "TypeScript"],
     description:
       "An app offering free access to anime, manga, and novels, packed with features for a seamless and enjoyable experience.",
@@ -42,6 +46,7 @@ export const projects: Project[] = [
     name: "Galsen Coding Challenge",
     slug: "galsen-coding-challenge",
     coverImage: "/projects/gcc.png",
+    logo: "/projects/lac-rose-excursion-logo.png",
     stack: ["Next.JS", "TypeScript", "MongoDB"],
     description:
       "This project aims to create a platform for coding challenges and collaboration within the Senegalese coding community. Users can participate in challenges, create their own, and engage in collaborative coding efforts.",
@@ -52,6 +57,7 @@ export const projects: Project[] = [
     name: "Sama Keur",
     slug: "sama-keur",
     coverImage: "/projects/sama-keur.png",
+    logo: "/projects/lac-rose-excursion-logo.png",
     stack: ["React", "JavaScript", "MongoDB", "Express"],
     description:
       "SamaKeur is a user-friendly real estate platform where users can register using their email address or Google account. They have the ability to add, delete, and modify real estate rental or sale listings with ease. Find your dream home or a reliable tenant in the blink of an eye thanks to SamaKeur.",
@@ -62,6 +68,7 @@ export const projects: Project[] = [
     name: "Jayy Ma Baguette",
     slug: "jayy-ma-baguette",
     coverImage: "/projects/jayy-ma-baguette.png",
+    logo: "/projects/lac-rose-excursion-logo.png",
     stack: ["HTML", "CSS"],
     description:
       "JayyMaBaguette is a landing page for a baker. It has 7 sections: the header, the category section, the about us section, the menu section, the product presentation section, the contact form, and the footer.",
@@ -72,6 +79,7 @@ export const projects: Project[] = [
     name: "Sama Car",
     slug: "sama-car",
     coverImage: "/projects/sama-car.png",
+    logo: "/projects/lac-rose-excursion-logo.png",
     stack: ["React", "Tailwind CSS"],
     description:
       "Sama Car is a landing page for a car business. It is a React application, styled using Tailwind CSS. The landing page aims to showcase the car business and its offerings to potential customers in an engaging and visually appealing manner.",
@@ -82,6 +90,7 @@ export const projects: Project[] = [
     name: "Sen Coffee",
     slug: "sen-coffee",
     coverImage: "/projects/sen-coffee.png",
+    logo: "/projects/lac-rose-excursion-logo.png",
     stack: ["React", "Tailwind CSS"],
     description:
       "Sen Coffee is a homepage for a coffee shop. It is a React application styled with Tailwind CSS. The purpose of this homepage is to present the coffee business and its products in an attractive and visually appealing way to potential customers.",

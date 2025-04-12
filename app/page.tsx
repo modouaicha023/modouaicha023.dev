@@ -1,3 +1,4 @@
+import Navbar from "@/components/navbar";
 import Hero from "@/components/sections/hero";
 import { Metadata } from "next";
 
@@ -26,9 +27,9 @@ export const metadata: Metadata = {
 
 export default function HomePage() {
   return (
-    <main className="max-w-7xl mx-auto relative my-20 md:px-16 px-6 lg:my-32">
+    <>
       <Hero />
       {/* <Projects /> */}
-    </main>
+    </>
   );
 }

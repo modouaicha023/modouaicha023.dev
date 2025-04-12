@@ -29,44 +29,42 @@ export const metadata: Metadata = {
 
 export default function ProjectsPage() {
   return (
-    <main className="grid grid-cols-3 gap-3 p-10">
-      {projects.map((project, index) => (
-        <div key={index} className="flex flex-col border p-2 rounded-3xl">
-          <div className="relative">
-            <h2 className="">{project?.name}</h2>
-            <div className=""></div>
+    <>
+      <div className="flex flex-col max-w-2xl">
+        <h1 className="text-4xl sm:text-5xl font-bold max-w-lg tracking-tight mb-6 lg:leading-[3.7rem] leading-tight lg:min-w-[700px] min-w-full">
+          Projects
+        </h1>
+        <p className="text-base dark:text-zinc-400 text-zinc-600 leading-relaxed">
+          I've worked on tons of little projects over the years but these are
+          the ones that I'm most proud of. Many of them are open-source, so if
+          you see something that piques your interest, check out the code and
+          contribute if you have ideas on how it can be improved.
+        </p>
+      </div>
+      <div className="flex flex-wrap gap-6 mt-8">
+        {projects.map((project, index) => (
+          <Link
+            href={`/projects/${project.slug}`}
+            key={index}
+            className="flex gap-x-4 items-center bg-[#131212] py-2 px-4 rounded-3xl border border-transparent hover:border-white box-border transition"
+          >
             <Image
-              src={project?.coverImage}
-              className="w-[300px] h-[200px] "
-              width={400}
-              height={400}
+              src={project.logo}
+              className="w-24 h-24 rounded-lg"
+              width={1280}
+              height={1280}
               alt={project.name + "| Modou Aicha Diop | @modouaicha023"}
             />
-          </div>
 
-          <div className="">
-            <div className="">
-              <div className="flex gap-2">
-                {project?.stack?.map((tech, index) => (
-                  <span key={index} className="text-red-300">
-                    {tech}
-                  </span>
-                ))}
-              </div>
-              <div className="flex">
-                <Link href={project?.githubUrl || "#"} target="_blank">
-                  <Github size={16} />
-                </Link>
-                <Link href={project?.url || "#"} target="_blank">
-                  <ExternalLink size={16} />
-                </Link>
+            <div className="flex flex-col p-4 w-full sm:max-w-sm">
+              <h2 className="font-bold text-xl">{project?.name}</h2>
+              <div className="text-base dark:text-zinc-400 text-zinc-600 leading-relaxed line-clamp-2">
+                {project?.description}
               </div>
             </div>
-
-            <div className="">{project?.description}</div>
-          </div>
-        </div>
-      ))}
-    </main>
+          </Link>
+        ))}
+      </div>
+    </>
   );
 }
