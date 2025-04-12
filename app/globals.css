@@ -4,10 +4,3 @@
 body {
   font-family: var(--font-app), sans-serif;
 }
-
-.bg-solo {
-  background-image: url("/solo.gif");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
