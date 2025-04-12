@@ -20,11 +20,10 @@ export default function ProjectsPage() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         {projects.map((project, index) => (
-          <>
+          <div key={index}>
             <ProjectJsonLd project={project} />
             <Link
               href={`/projects/${project.slug}`}
-              key={index}
               className="group flex items-start gap-4 bg-white dark:bg-[#1a1a1a] border border-zinc-200 dark:border-zinc-800 rounded-lg p-4 hover:shadow-lg transition-shadow duration-300"
             >
               <div className="flex-shrink-0">
@@ -46,7 +45,7 @@ export default function ProjectsPage() {
                 </p>
               </div>
             </Link>
-          </>
+          </div>
         ))}
       </div>
     </section>

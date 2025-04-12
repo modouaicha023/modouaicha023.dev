@@ -12,9 +12,9 @@ export default function Hero() {
             Software Developer, Freelancer & Tech Content Creator
           </h1>
           <p className="text-base dark:text-zinc-400 text-zinc-600 leading-relaxed">
-            Hey, I&apos;m <ScrambleText>Modou Aicha</ScrambleText> — a self-taught
-            developer and freelancer passionate about building apps, crafting
-            helpful dev content, and empowering others in tech.
+            Hey, I&apos;m <ScrambleText>Modou Aicha</ScrambleText> — a
+            self-taught developer and freelancer passionate about building apps,
+            crafting helpful dev content, and empowering others in tech.
           </p>
         </div>
         <div className="flex flex-col w-full items-start max-w-2xl">
@@ -38,7 +38,7 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      <div className="w-full xl:w-[350px] h-[400px] border-1 rounded-lg max-w-2xl"></div>
+      <div className="w-full xl:w-[350px] h-[400px] border-1 rounded-lg max-w-2xl bg-solo"></div>
     </section>
   );
 }
