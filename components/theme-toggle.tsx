@@ -31,7 +31,8 @@ export function ThemeToggle() {
       onToggle={() => {
         setTheme(theme === "light" ? "dark" : "light");
       }}
-      reversed={theme === "dark"}
+      className="text-2xl"
+      forceMotion
       {...({} as React.ComponentProps<typeof Horizon>)}
     />
   );

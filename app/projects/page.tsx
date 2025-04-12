@@ -1,70 +1,50 @@
+"use client";
+
 import { projects } from "@/constants";
-import { ExternalLink, Github } from "lucide-react";
-import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "Mes Projects | Développeur Full Stack",
-  description:
-    "Portfolio de Modou Aicha Diop, développeur full stack spécialisé en React, Next.js et NestJS. Découvrez mes projets, compétences et services en développement web et mobile au Sénégal.",
-  openGraph: {
-    title: "Modou Aicha Diop | Développeur Full Stack au Sénégal",
-    description:
-      "Découvrez mon portfolio en tant que développeur full stack spécialisé en React, Next.js et NestJS. Je crée des solutions web et mobiles innovantes adaptées aux besoins des entreprises et startups.",
-    url: "https://www.modouaicha023.dev",
-    siteName: "Modou Aicha Diop - Portfolio",
-    images: [
-      {
-        url: "https://www.modouaicha023.dev/preview.png",
-        width: 1200,
-        height: 630,
-        alt: "Portfolio de Modou Aicha Diop - Développeur Full Stack",
-      },
-    ],
-    locale: "fr_FR",
-    type: "website",
-  },
-};
-
 export default function ProjectsPage() {
   return (
-    <>
-      <div className="flex flex-col max-w-2xl">
-        <h1 className="text-4xl sm:text-5xl font-bold max-w-lg tracking-tight mb-6 lg:leading-[3.7rem] leading-tight lg:min-w-[700px] min-w-full">
+    <section className="max-w-4xl mx-auto ">
+      <header className="mb-8">
+        <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-zinc-900 dark:text-white mb-4">
           Projects
         </h1>
-        <p className="text-base dark:text-zinc-400 text-zinc-600 leading-relaxed">
+        <p className="text-base text-zinc-600 dark:text-zinc-400 leading-relaxed max-w-2xl">
           I've worked on tons of little projects over the years but these are
-          the ones that I'm most proud of. Many of them are open-source, so if
-          you see something that piques your interest, check out the code and
-          contribute if you have ideas on how it can be improved.
+          the ones that I'm most proud of.
         </p>
-      </div>
-      <div className="flex flex-wrap gap-6 mt-8">
+      </header>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         {projects.map((project, index) => (
           <Link
             href={`/projects/${project.slug}`}
             key={index}
-            className="flex gap-x-4 items-center bg-[#131212] py-2 px-4 rounded-3xl border border-transparent hover:border-white box-border transition"
+            className="group flex items-start gap-4 bg-white dark:bg-[#1a1a1a] border border-zinc-200 dark:border-zinc-800 rounded-lg p-4 hover:shadow-lg transition-shadow duration-300"
           >
-            <Image
-              src={project.logo}
-              className="w-24 h-24 rounded-lg"
-              width={1280}
-              height={1280}
-              alt={project.name + "| Modou Aicha Diop | @modouaicha023"}
-            />
+            <div className="flex-shrink-0">
+              <Image
+                src={project.logo}
+                alt={project.name + " | Modou Aicha Diop"}
+                width={96}
+                height={96}
+                className="w-16 h-16 sm:w-24 sm:h-24 rounded-lg object-cover"
+              />
+            </div>
 
-            <div className="flex flex-col p-4 w-full sm:max-w-sm">
-              <h2 className="font-bold text-xl">{project?.name}</h2>
-              <div className="text-base dark:text-zinc-400 text-zinc-600 leading-relaxed line-clamp-2">
-                {project?.description}
-              </div>
+            <div className="flex flex-col justify-between flex-1">
+              <h2 className="text-sm sm:text-xl font-semibold text-zinc-900 dark:text-white group-hover:underline">
+                {project.name}
+              </h2>
+              <p className="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 line-clamp-2 sm:line-clamp-2 mt-2">
+                {project.description}
+              </p>
             </div>
           </Link>
         ))}
       </div>
-    </>
+    </section>
   );
 }
