@@ -150,10 +150,10 @@ export default function RootLayout({
         className={`${font.variable} antialiased bg-[#FEF1FA] dark:bg-[#0A0A0A] text-black dark:text-white`}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <div className="max-w-7xl mx-auto relative my-20 md:px-16 lg:my-32">
+          <div className="max-w-7xl mx-auto relative md:px-16">
             <Navbar />
           </div>
-          <main className="max-w-7xl mx-auto relative my-20 md:px-16 px-6 lg:my-32">
+          <main className="max-w-7xl mx-auto relative mt-8 mb-20 md:px-16 px-6">
             {children}
           </main>
           <Analytics />
