@@ -23,7 +23,7 @@ export const projects: Project[] = [
     name: "Game Of Life",
     slug: "game-of-life",
     coverImage: "/projects/game-of-life.png",
-    logo: "/projects/lac-rose-excursion-logo.png",
+    logo: "/projects/game-of-life-logo.png",
     stack: ["JavaScript", "HTML", "CSS"],
     description:
       "This is a game called Game of life challenge. The Game of Life, also known simply as Life, is a cellular automaton devised by the British mathematician John Horton Conway in 1970.",
@@ -34,7 +34,7 @@ export const projects: Project[] = [
     name: "Galsen Mangas",
     slug: "galsen-mangas",
     coverImage: "/projects/galsen-mangas.png",
-    logo: "/projects/lac-rose-excursion-logo.png",
+    logo: "/projects/galsen-mangas-logo.png",
 
     stack: ["Next.JS", "TypeScript"],
     description:
@@ -42,33 +42,33 @@ export const projects: Project[] = [
     url: "https://galsen-mangas.vercel.app",
     githubUrl: "https://github.com/modouaicha023/galsen-mangas",
   },
-  {
-    name: "Galsen Coding Challenge",
-    slug: "galsen-coding-challenge",
-    coverImage: "/projects/gcc.png",
-    logo: "/projects/lac-rose-excursion-logo.png",
-    stack: ["Next.JS", "TypeScript", "MongoDB"],
-    description:
-      "This project aims to create a platform for coding challenges and collaboration within the Senegalese coding community. Users can participate in challenges, create their own, and engage in collaborative coding efforts.",
-    url: "https://galsen-coding-challenge.vercel.app",
-    githubUrl: "https://github.com/modouaicha023/GalsenCodingChallenge",
-  },
-  {
-    name: "Sama Keur",
-    slug: "sama-keur",
-    coverImage: "/projects/sama-keur.png",
-    logo: "/projects/lac-rose-excursion-logo.png",
-    stack: ["React", "JavaScript", "MongoDB", "Express"],
-    description:
-      "SamaKeur is a user-friendly real estate platform where users can register using their email address or Google account. They have the ability to add, delete, and modify real estate rental or sale listings with ease. Find your dream home or a reliable tenant in the blink of an eye thanks to SamaKeur.",
-    url: "https://sama-keur-sn.onrender.com",
-    githubUrl: "https://github.com/modouaicha023/sama-keur-sn",
-  },
+  // {
+  //   name: "Galsen Coding Challenge",
+  //   slug: "galsen-coding-challenge",
+  //   coverImage: "/projects/galsen-coding-challenge.png",
+  //   logo: "/projects/galsen-coding-challenge-logo.png",
+  //   stack: ["Next.JS", "TypeScript", "MongoDB"],
+  //   description:
+  //     "This project aims to create a platform for coding challenges and collaboration within the Senegalese coding community. Users can participate in challenges, create their own, and engage in collaborative coding efforts.",
+  //   url: "https://galsen-coding-challenge.vercel.app",
+  //   githubUrl: "https://github.com/modouaicha023/GalsenCodingChallenge",
+  // },
+  // {
+  //   name: "Sama Keur",
+  //   slug: "sama-keur",
+  //   coverImage: "/projects/sama-keur.png",
+  //   logo: "/projects/lac-rose-excursion-logo.png",
+  //   stack: ["React", "JavaScript", "MongoDB", "Express"],
+  //   description:
+  //     "SamaKeur is a user-friendly real estate platform where users can register using their email address or Google account. They have the ability to add, delete, and modify real estate rental or sale listings with ease. Find your dream home or a reliable tenant in the blink of an eye thanks to SamaKeur.",
+  //   url: "https://sama-keur-sn.onrender.com",
+  //   githubUrl: "https://github.com/modouaicha023/sama-keur-sn",
+  // },
   {
     name: "Jayy Ma Baguette",
     slug: "jayy-ma-baguette",
     coverImage: "/projects/jayy-ma-baguette.png",
-    logo: "/projects/lac-rose-excursion-logo.png",
+    logo: "/projects/jayy-ma-baguette-logo.png",
     stack: ["HTML", "CSS"],
     description:
       "JayyMaBaguette is a landing page for a baker. It has 7 sections: the header, the category section, the about us section, the menu section, the product presentation section, the contact form, and the footer.",
@@ -79,7 +79,7 @@ export const projects: Project[] = [
     name: "Sama Car",
     slug: "sama-car",
     coverImage: "/projects/sama-car.png",
-    logo: "/projects/lac-rose-excursion-logo.png",
+    logo: "/projects/sama-car-logo.png",
     stack: ["React", "Tailwind CSS"],
     description:
       "Sama Car is a landing page for a car business. It is a React application, styled using Tailwind CSS. The landing page aims to showcase the car business and its offerings to potential customers in an engaging and visually appealing manner.",
@@ -90,7 +90,7 @@ export const projects: Project[] = [
     name: "Sen Coffee",
     slug: "sen-coffee",
     coverImage: "/projects/sen-coffee.png",
-    logo: "/projects/lac-rose-excursion-logo.png",
+    logo: "/projects/sen-coffee-logo.png",
     stack: ["React", "Tailwind CSS"],
     description:
       "Sen Coffee is a homepage for a coffee shop. It is a React application styled with Tailwind CSS. The purpose of this homepage is to present the coffee business and its products in an attractive and visually appealing way to potential customers.",
