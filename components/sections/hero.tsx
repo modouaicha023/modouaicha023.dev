@@ -46,7 +46,6 @@ export default function Hero() {
         >
           <source src="/solo.mp4" type="video/mp4" />
           <source src="/solo.webm" type="video/webm" />
-          {/* Fallback to image if video isn't supported */}
           <img
             src="/solo.webp"
             alt="Profile"
