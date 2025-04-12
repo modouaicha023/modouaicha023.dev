@@ -18,6 +18,7 @@ export const projects: Project[] = [
       "Lac Rose Excursion est un site web développé avec Next.js, Tailwind CSS, et TypeScript pour une entreprise d'excursions. Il permet de découvrir les excursions proposées et de réserver facilement en ligne.",
     url: "https://www.lac-rose-excursion.com/",
     githubUrl: "https://www.lac-rose-excursion.com/",
+    type: "Freelance",
   },
   {
     name: "Game Of Life",
@@ -29,6 +30,7 @@ export const projects: Project[] = [
       "This is a game called Game of life challenge. The Game of Life, also known simply as Life, is a cellular automaton devised by the British mathematician John Horton Conway in 1970.",
     url: "https://modouaicha023.github.io/GameOfLife",
     githubUrl: "https://github.com/modouaicha023/GameOfLife",
+    type: "Personal",
   },
   {
     name: "Galsen Mangas",
@@ -41,6 +43,7 @@ export const projects: Project[] = [
       "An app offering free access to anime, manga, and novels, packed with features for a seamless and enjoyable experience.",
     url: "https://galsen-mangas.vercel.app",
     githubUrl: "https://github.com/modouaicha023/galsen-mangas",
+    type: "Personal",
   },
   // {
   //   name: "Galsen Coding Challenge",
@@ -74,6 +77,7 @@ export const projects: Project[] = [
       "JayyMaBaguette is a landing page for a baker. It has 7 sections: the header, the category section, the about us section, the menu section, the product presentation section, the contact form, and the footer.",
     url: "https://modouaicha023.github.io/jaaymabaguette",
     githubUrl: "https://github.com/modouaicha023/jaaymabaguette",
+    type: "Personal",
   },
   {
     name: "Sama Car",
@@ -85,6 +89,7 @@ export const projects: Project[] = [
       "Sama Car is a landing page for a car business. It is a React application, styled using Tailwind CSS. The landing page aims to showcase the car business and its offerings to potential customers in an engaging and visually appealing manner.",
     url: "https://sama-car.vercel.app",
     githubUrl: "https://github.com/modouaicha023/sama-car",
+    type: "Personal",
   },
   {
     name: "Sen Coffee",
@@ -96,6 +101,7 @@ export const projects: Project[] = [
       "Sen Coffee is a homepage for a coffee shop. It is a React application styled with Tailwind CSS. The purpose of this homepage is to present the coffee business and its products in an attractive and visually appealing way to potential customers.",
     url: "https://sen-coffee.netlify.app/",
     githubUrl: "https://github.com/modouaicha023/sen-coffee",
+    type: "Personal",
   },
 ];
 export const navbarLinks: NavbarLink[] = [

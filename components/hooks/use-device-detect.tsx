@@ -7,13 +7,13 @@ export function useDeviceDetect() {
   useEffect(() => {
     const checkMobile = () => {
       if (typeof window !== "undefined") {
-        const userAgent = navigator.userAgent.toLowerCase();
-        const mobileDevices =
-          /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i;
+        // const userAgent = navigator.userAgent.toLowerCase();
+        // const mobileDevices =
+        //   /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i;
 
         const isMobileViewport = window.innerWidth < 640;
 
-        setIsMobile(mobileDevices.test(userAgent) || isMobileViewport);
+        setIsMobile(isMobileViewport);
       }
     };
 

@@ -11,6 +11,7 @@ export interface Project {
   githubUrl?: string;
   gallery?: string[];
   video?: string;
+  type: string;
 }
 
 export interface NavbarLink {

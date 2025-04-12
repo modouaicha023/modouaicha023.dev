@@ -18,13 +18,14 @@ export default function ProjectsPage() {
         </p>
       </header>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {projects.map((project, index) => (
           <div key={index}>
             <ProjectJsonLd project={project} />
             <Link
               href={`/projects/${project.slug}`}
-              className="group flex items-start gap-4 bg-white dark:bg-[#1a1a1a] border border-zinc-200 dark:border-zinc-800 rounded-lg p-4 hover:shadow-lg transition-shadow duration-300"
+              className="group flex items-start gap-4 bg-white dark:bg-[#1a1a1a] border border-zinc-200 hover:border-gray-400 dark:border-zinc-800 rounded-lg p-4 transition-all focus:outline-none duration-300 focus:border-gray-400"
+              tabIndex={0} 
             >
               <div className="flex-shrink-0">
                 <Image
@@ -37,8 +38,13 @@ export default function ProjectsPage() {
               </div>
 
               <div className="flex flex-col justify-between flex-1">
-                <h2 className="text-sm sm:text-xl font-semibold text-zinc-900 dark:text-white group-hover:underline">
-                  {project.name}
+                <h2>
+                  <span className="text-sm sm:text-xl font-semibold text-zinc-900 dark:text-white group-hover:underline">
+                    {project.name}
+                  </span>
+                  <span className=" ml-2 font-mono text-xs sm:text-sm text-zinc-600 dark:text-zinc-400">
+                    {project.type}
+                  </span>
                 </h2>
                 <p className="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 line-clamp-2 sm:line-clamp-2 mt-2">
                   {project.description}

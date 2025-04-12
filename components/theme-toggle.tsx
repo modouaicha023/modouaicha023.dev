@@ -21,7 +21,6 @@ export function ThemeToggle() {
   }, [theme, isMounted]);
 
   if (!isMounted) return null;
-  console.log(theme);
 
   return (
     <Horizon

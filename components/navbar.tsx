@@ -6,10 +6,18 @@ import { ThemeToggle } from "./theme-toggle";
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
 import { useDeviceDetect } from "./hooks/use-device-detect";
+import { useState, useEffect } from "react";
 
 export default function Navbar() {
   const { isMobile } = useDeviceDetect();
   const pathname = usePathname();
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  if (!isMounted) return null;
 
   return (
     <div className="fixed sm:sticky bottom-0 sm:top-0 z-50 w-full sm:flex sm:justify-end sm:px-4 sm:py-2">
