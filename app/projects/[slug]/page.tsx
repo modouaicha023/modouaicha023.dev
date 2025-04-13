@@ -76,10 +76,12 @@ export default async function ProjectDetailPage({
   const project: Project = await res.json();
 
   return (
-    <>
-      <ProjectJsonLd project={project} />
-      <ProjectMdx project={project} />
-    </>
+    <div className="flex w-full items-center justify-center">
+      <div className="prose max-w-xl prose-headings:mt-8 prose-headings:font-semibold prose-h1:text-5xl prose-h2:text-4xl prose-h3:text-3xl prose-h4:text-2xl prose-h5:text-xl prose-h6:text-lg w-full flex flex-col  dark:prose-invert">
+        <ProjectJsonLd project={project} />
+        <ProjectMdx project={project} />
+      </div>
+    </div>
   );
 }
 
