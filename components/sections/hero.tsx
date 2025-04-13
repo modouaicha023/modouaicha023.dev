@@ -1,10 +1,17 @@
-import React from "react";
 import ScrambleText from "../scramble-text";
 import { stacks } from "@/constants";
 import SocialMedia from "../social-media";
 import Image from "next/image";
 
 export default function Hero() {
+  // const audioRef = useRef<HTMLAudioElement>(null);
+
+  // const playAudio = () => {
+  //   if (audioRef.current) {
+  //     audioRef.current.play();
+  //   }
+  // };
+
   return (
     <section className="flex flex-col xl:flex-row gap-8 justify-center items-center mx-auto">
       <div className="flex flex-col gap-4 justify-center items-center mx-auto">
@@ -35,6 +42,17 @@ export default function Hero() {
               </div>
             ))}
           </div>
+          {/* 
+          <button
+            onClick={playAudio}
+            className="mt-4 px-4 py-2 rounded-lg shadow"
+          >
+            ▶ Play Audio
+          </button>
+          <audio ref={audioRef} loop autoPlay>
+            <source src="/audio.mp3" type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio> */}
         </div>
       </div>
       <div className="w-full xl:w-[350px] h-[400px] border rounded-lg max-w-2xl overflow-hidden relative">

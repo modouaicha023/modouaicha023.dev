@@ -4,6 +4,7 @@ import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import fs from "fs";
 import path from "path";
+import ProjectDetail from "@/components/project-header";
 
 export async function generateMetadata(props: {
   params: Promise<{ slug: string }>;
@@ -70,8 +71,9 @@ export default async function ProjectDetailPage({
 
   return (
     <div className="flex w-full items-center justify-center">
-      <div className="prose max-w-xl prose-headings:mt-8 prose-headings:font-semibold prose-h1:text-5xl prose-h2:text-4xl prose-h3:text-3xl prose-h4:text-2xl prose-h5:text-xl prose-h6:text-lg w-full flex flex-col dark:prose-invert">
+      <div className="prose max-w-xl w-full flex flex-col dark:prose-invert">
         <ProjectJsonLd project={project} />
+        <ProjectDetail project={project} />
         <ProjectMdx project={project} />
       </div>
     </div>

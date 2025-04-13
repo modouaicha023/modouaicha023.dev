@@ -40,7 +40,7 @@ export default function Navbar() {
           </Link>
 
           {navbarLinks.slice(1).map((link, index) => {
-            const isActive = pathname === link.href;
+            const isActive = "/" + pathname.split("/")[1] === link.href;
             return (
               <Link
                 href={link.href}
@@ -84,7 +84,8 @@ export default function Navbar() {
                 key={index}
                 className={clsx(
                   "hover:underline font-medium px-2 py-1 rounded-md transition",
-                  pathname === link.href && "text-pink-600 underline"
+                  "/" + pathname.split("/")[1] === link.href &&
+                    "text-pink-600 underline"
                 )}
               >
                 {link.title}
