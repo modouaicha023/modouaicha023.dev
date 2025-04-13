@@ -1,7 +1,9 @@
 import { ProjectJsonLd } from "@/components/json-ld";
 import ProjectDetail from "@/components/project-detail";
+import { projects } from "@/constants";
 import { Project } from "@/types";
 import { Metadata } from "next";
+import { notFound } from "next/navigation";
 
 export async function generateMetadata(props: {
   params: Promise<{ slug: string }>;
@@ -50,6 +52,17 @@ export default async function ProjectDetailPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
+
+  let ProjectMdx;
+  try {
+    const { default: MdxComponent } = await import(
+      `@/content/projects/${slug}.mdx`
+    );
+    ProjectMdx = MdxComponent;
+  } catch (error) {
+    notFound();
+  }
+
   const res = await fetch(
     `${process.env.NEXT_PUBLIC_API_URL}/api/projects/${slug}`
   );
@@ -57,10 +70,20 @@ export default async function ProjectDetailPage({
     throw new Error(`Failed to fetch project: ${res.statusText}`);
   }
   const project: Project = await res.json();
+
   return (
     <>
       <ProjectJsonLd project={project} />
-      <ProjectDetail project={project} />
+      <ProjectMdx project={project} />
     </>
   );
 }
+
+export function generateStaticParams() {
+  const slugs = projects.map((project) => {
+    return { slug: project.slug };
+  });
+  return slugs;
+}
+
+export const dynamicParams = false;
