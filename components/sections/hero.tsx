@@ -2,6 +2,7 @@ import React from "react";
 import ScrambleText from "../scramble-text";
 import { stacks } from "@/constants";
 import SocialMedia from "../social-media";
+import Image from "next/image";
 
 export default function Hero() {
   return (
@@ -46,9 +47,11 @@ export default function Hero() {
         >
           <source src="/solo.mp4" type="video/mp4" />
           <source src="/solo.webm" type="video/webm" />
-          <img
+          <Image
             src="/solo.webp"
-            alt="Profile"
+            alt="Modou Aicha Diop"
+            width={1280}
+            height={1280}
             className="w-full h-full object-cover"
           />
         </video>

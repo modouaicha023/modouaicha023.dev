@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function NotFound() {
@@ -12,9 +13,11 @@ export default function NotFound() {
       >
         <source src="/zoro-lost.mp4" type="video/mp4" />
         <source src="/zoro-lost.webm" type="video/webm" />
-        <img
+        <Image
           src="/zoro-lost.webp"
           alt="Zoro lost as usual"
+          width={1280}
+          height={1280}
           className="w-full h-full object-cover"
         />
       </video>
@@ -25,14 +28,14 @@ export default function NotFound() {
 
       <div className="text-center mb-8 max-w-md space-y-4">
         <p className="text-lg">
-          "I'm not lost! The page must have moved!"
+          {`"I'm not lost! The page must have moved!"`}
           <span className="block italic text-sm mt-1">- Roronoa Zoro</span>
         </p>
 
         <p>
-          Just like Zoro's infamous sense of direction, the resource you're
-          looking for seems to have wandered off somewhere else in the Grand
-          Line.
+          Just like Zoro&apos;s infamous sense of direction, the resource
+          you&apos;re looking for seems to have wandered off somewhere else in
+          the Grand Line.
         </p>
       </div>
 

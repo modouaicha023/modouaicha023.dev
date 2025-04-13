@@ -1,9 +1,10 @@
 import { ProjectJsonLd } from "@/components/json-ld";
-import ProjectDetail from "@/components/project-detail";
 import { projects } from "@/constants";
 import { Project } from "@/types";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
+import fs from "fs";
+import path from "path";
 
 export async function generateMetadata(props: {
   params: Promise<{ slug: string }>;
@@ -19,24 +20,21 @@ export async function generateMetadata(props: {
   const project: Project = await res.json();
   if (!project) {
     return {
-      title: "project non trouvée",
+      title: "Projet introuvable",
+      description: "Aucune description disponible pour ce projet.",
     };
   }
 
   return {
     title: project.name,
-    description:
-      project?.description?.substring(0, 160) ||
-      "Découvrez des destinations inoubliables et vivez des expériences exceptionnelles.",
+    description: project?.description?.substring(0, 160),
     openGraph: {
       title: project.description,
-      description:
-        project?.description?.substring(0, 160) ||
-        "Découvrez des destinations inoubliables et vivez des expériences exceptionnelles.",
+      description: project?.description?.substring(0, 160),
       url: `https://www.modouaicha023.dev/projects/${params.slug}`,
       images: [
         {
-          url: project.coverImage || "/logo.png",
+          url: project.logo || "/logo.png",
           width: 1200,
           height: 630,
           alt: project.name,
@@ -53,6 +51,11 @@ export default async function ProjectDetailPage({
 }) {
   const { slug } = await params;
 
+  const mdxPath = path.resolve(`content/projects/${slug}.mdx`);
+  if (!fs.existsSync(mdxPath)) {
+    notFound();
+  }
+
   let ProjectMdx;
   try {
     const { default: MdxComponent } = await import(
@@ -60,6 +63,7 @@ export default async function ProjectDetailPage({
     );
     ProjectMdx = MdxComponent;
   } catch (error) {
+    console.error(error);
     notFound();
   }
 
