@@ -2,17 +2,15 @@ export const frontMatter = {
   title: "Lac Rose Excursion",
   date: "2025-04-13",
   author: "Modou A.",
-  tags: ["excursion", "sénégal", "projet", "nextjs"]
+  tags: ["modouaicha023","sénégal", "projet", "nextjs"]
 };
 
-# Welcome to my MDX page!
+# {props.project.name}
+<p>{props.project.description}</p>
+## 🛠️ Stack Technique
 
-This is some **bold** and _italics_ text.
-
-This is a list in markdown:
-
-- One
-- Two
-- Three
-
-Checkout my React component:
+<ul>
+{props.project.stack.map((st)=>(
+      <li>{st}</li>
+))}
+</ul>

@@ -3,11 +3,18 @@ import React from "react";
 import { ExternalLink } from "lucide-react";
 import { Project } from "@/types";
 import { Icons } from "./icons";
+import Image from "next/image";
 
 export default function ProjectDetail({ project }: { project: Project }) {
   return (
-    <div className="flex sm:justify-between sm:items-center sm:flex-row flex-col">
-      <h2 className="">{project?.name}</h2>
+    <div className="flex sm:justify-between sm:items-center sm:flex-row flex-col mb-6 sm:mb-0">
+      <Image
+        src={project.logo}
+        alt={project.name + " Project Modou Aicha Diop modouaicha023"}
+        width={96}
+        height={96}
+        className="w-16 h-16 sm:w-24 sm:h-24 rounded-lg object-cover"
+      />
       <div className="flex items-center gap-x-4 ">
         <Link
           href={project?.githubUrl || "#"}

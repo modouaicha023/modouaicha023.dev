@@ -1,4 +1,3 @@
-// components/project-editor.tsx
 "use client";
 
 import { useState, useEffect } from "react";
@@ -13,7 +12,6 @@ export default function ProjectEditor({ slug }: { slug: string }) {
   const project = projects.find((p) => p.slug === slug);
 
   useEffect(() => {
-    // Charger le contenu MDX initial
     const fetchMdxContent = async () => {
       try {
         setIsLoading(true);
@@ -47,7 +45,7 @@ export default function ProjectEditor({ slug }: { slug: string }) {
   if (isLoading) return <div>Chargement...</div>;
 
   return (
-    <div className="max-w-4xl mx-auto p-4">
+    <div className="w-full p-4">
       <h1 className="text-2xl font-bold mb-4">Éditer {project.name}</h1>
       <MDXEditorComponent initialContent={content} onChange={setContent} />
       <div className="mt-4 flex gap-2">

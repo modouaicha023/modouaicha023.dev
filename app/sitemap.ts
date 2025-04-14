@@ -5,7 +5,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = "https://www.modouaicha023.dev";
   const currentDate = new Date();
 
-  const staticPages = ["", "/projects", "/contact", "/about"].map((route) => ({
+  const staticPages = ["", "/projects", "/contact", "/about","/blog"].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
     changeFrequency: "monthly" as const,

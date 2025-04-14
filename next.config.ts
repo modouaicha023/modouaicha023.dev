@@ -10,9 +10,7 @@ const nextConfig = {
 };
 
 const withMDX = createMDX({
-  // Note: For Turbopack compatibility, options need to be kept simple
   extension: /\.mdx?$/,
 });
 
-// Merge MDX config with Next.js config
 export default withMDX(nextConfig);

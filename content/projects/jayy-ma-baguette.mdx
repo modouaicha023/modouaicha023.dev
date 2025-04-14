@@ -1,81 +1,17 @@
 export const frontMatter = {
-  title: "Lac Rose Excursion",
+  title: "Jayy Ma Baguette",
   date: "2025-04-13",
   author: "Modou A.",
-  tags: ["excursion", "sénégal", "projet", "nextjs"]
+  tags: ["modouaicha023","sénégal", "projet", "nextjs"]
 };
 
-import Image from 'next/image'
-
-# 🌅 Projet :Jayy Ma Baguette
-
-Bienvenue sur la page de présentation du projet **Lac Rose Excursion**, une plateforme dédiée à la réservation d’excursions au célèbre Lac Retba, connu pour sa couleur rose unique.
-
----
+# {props.project.name}
+<p>{props.project.description}</p>
 
 ## 🛠️ Stack Technique
 
-- **Framework** : _Next.js 14 avec App Router_
-- **Emailing** : _Resend_
-- **Hébergement** : _Vercel_
-- **Gestion de contenu** : _MDX + fichiers JSON_
-- **Langages** : _JavaScript, Tailwind CSS_
-
----
-
-## 📸 Aperçu
-
-<Image
-  src="/projects/lac-rose-excursion.png"
-  alt="Vue aérienne du Lac Rose"
-  width={800}
-  height={400}
-/>
-
----
-
-## 🧩 Fonctionnalités principales
-
-- 📅 Réservation en ligne
-- 📧 Confirmation par email
-- 🔒 Interface admin protégée
-- 🌍 Multilingue (français & anglais)
-- 📱 Responsive sur mobile
-
----
-
-## 🔍 Aperçu du code
-
-```tsx
-// Exemple de composant pour réserver une excursion
-export default function Reservation() {
-  return (
-    <button className="bg-pink-600 text-white px-4 py-2 rounded-xl">
-      Réserver maintenant
-    </button>
-  );
-}
-```
-
----
-
-## 🚀 Lancer le projet
-
-```bash
-git clone https://github.com/modouaicha023/lac-rose-excursion
-cd lac-rose-excursion
-npm install
-npm run dev
-```
-
----
-
-## 📌 À propos de l'auteur
-
-> Développé avec ❤️ par **Modou A.**, passionné de tech et créateur de contenu basé au Sénégal.
-
----
-
-## 🧪 Composant dynamique
-
-Voici un bouton interactif directement intégré dans l’article :
+<ul>
+{props.project.stack.map((st)=>(
+      <li>{st}</li>
+))}
+</ul>

@@ -200,18 +200,18 @@ export const stacks: Stack[] = [
     title: "NextJS",
     icon: Icons.nextJs,
   },
-  {
-    title: "Vue JS",
-    icon: Icons.vueJs,
-  },
-  {
-    title: "Nuxt",
-    icon: Icons.nuxt,
-  },
-  {
-    title: "Angular",
-    icon: Icons.angular,
-  },
+  // {
+  //   title: "Vue JS",
+  //   icon: Icons.vueJs,
+  // },
+  // {
+  //   title: "Nuxt",
+  //   icon: Icons.nuxt,
+  // },
+  // {
+  //   title: "Angular",
+  //   icon: Icons.angular,
+  // },
 
   // --- Backend Frameworks ---
   {
@@ -240,14 +240,14 @@ export const stacks: Stack[] = [
     title: "Docker",
     icon: Icons.docker,
   },
-  {
-    title: "AWS",
-    icon: Icons.aws,
-  },
-  {
-    title: "CI/CD",
-    icon: Icons.cicd,
-  },
+  // {
+  //   title: "AWS",
+  //   icon: Icons.aws,
+  // },
+  // {
+  //   title: "CI/CD",
+  //   icon: Icons.cicd,
+  // },
 
   {
     title: "Git",

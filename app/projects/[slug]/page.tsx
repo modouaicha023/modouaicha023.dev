@@ -52,13 +52,10 @@ export default async function ProjectDetailPage({
   }
 
   let ProjectMdx;
-  let frontMatter = {};
 
   try {
-    // Import the MDX file
     const mdxModule = await import(`@/content/projects/${slug}.mdx`);
     ProjectMdx = mdxModule.default;
-    frontMatter = mdxModule.frontMatter || {};
   } catch (error) {
     console.error(error);
     notFound();

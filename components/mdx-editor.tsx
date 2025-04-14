@@ -11,6 +11,14 @@ import {
   frontmatterPlugin,
   linkPlugin,
   MDXEditor,
+  toolbarPlugin,
+  imagePlugin,
+  KitchenSinkToolbar,
+  codeMirrorPlugin,
+  linkDialogPlugin,
+  tablePlugin,
+  AdmonitionDirectiveDescriptor,
+  directivesPlugin,
 } from "@mdxeditor/editor";
 import "@mdxeditor/editor/style.css";
 
@@ -31,10 +39,11 @@ export default function MDXEditorComponent({
     setMounted(true);
   }, []);
 
-  if (!mounted) return <div>Chargement de l'éditeur...</div>;
+  if (!mounted) return <div>Chargement de l&apos;éditeur...</div>;
 
   return (
     <MDXEditor
+      className="dark-theme dark-editor border"
       markdown={initialContent}
       onChange={onChange}
       readOnly={readOnly}
@@ -47,7 +56,30 @@ export default function MDXEditorComponent({
         markdownShortcutPlugin(),
         codeBlockPlugin(),
         linkPlugin(),
+        linkDialogPlugin(),
         frontmatterPlugin(),
+        tablePlugin(),
+        codeMirrorPlugin({
+          codeBlockLanguages: {
+            js: "JavaScript",
+            css: "CSS",
+            txt: "text",
+            tsx: "TypeScript",
+          },
+        }),
+        toolbarPlugin({ toolbarContents: () => <KitchenSinkToolbar /> }),
+        imagePlugin({
+          imageUploadHandler: () => {
+            return Promise.resolve("https://picsum.photos/200/300");
+          },
+          imageAutocompleteSuggestions: [
+            "https://picsum.photos/200/300",
+            "https://picsum.photos/200",
+          ],
+        }),
+        directivesPlugin({
+          directiveDescriptors: [AdmonitionDirectiveDescriptor],
+        }),
       ]}
     />
   );

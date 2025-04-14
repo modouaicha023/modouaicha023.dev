@@ -1,4 +1,3 @@
-// app/admin/projects/[slug]/edit/page.tsx
 import ProjectEditor from "@/components/project-editor";
 import { notFound } from "next/navigation";
 import { projects } from "@/constants";

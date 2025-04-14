@@ -18,6 +18,7 @@ export async function GET(
     const content = await fs.readFile(filePath, "utf8");
     return NextResponse.json({ content });
   } catch (error) {
+    console.error(error);
     return NextResponse.json({ error: "Fichier non trouvé" }, { status: 404 });
   }
 }
@@ -39,6 +40,7 @@ export async function POST(
     await fs.writeFile(filePath, content, "utf8");
     return NextResponse.json({ success: true });
   } catch (error) {
+    console.error(error);
     return NextResponse.json(
       { error: "Erreur lors de l'enregistrement" },
       { status: 500 }
