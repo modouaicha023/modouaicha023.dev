@@ -16,11 +16,11 @@ const font = Exo_2({
 
 export const metadata: Metadata = {
   title: {
-    default: "Modou Aicha Diop | Développeur Full Stack",
+    default: "Modou Aicha Diop | Full Stack Developer",
     template: "%s | Modou Aicha Diop",
   },
   description:
-    "Portfolio de Modou Aicha Diop, développeur full stack spécialisé en React, Next.js et NestJS. Découvrez mes projets, compétences et services en développement web et mobile au Sénégal.",
+    "Portfolio of Modou Aicha Diop, a full stack developer specialized in React, Next.js, and NestJS. Explore my projects, skills, and web and mobile development services in Senegal.",
   keywords: [
     "Modou Aicha Diop",
     "modouaicha023",
@@ -102,26 +102,51 @@ export const metadata: Metadata = {
     "Meetup Dev Sénégal",
     "Événements Tech Sénégal",
     "Communauté IT Sénégal",
+    "Mobile Developer",
+    "Freelance Senegal",
+    "IT Company Senegal",
+    "Mobile Development Senegal",
+    "Website Creation Senegal",
+    "Freelance Designer Senegal",
+    "Business Apps Senegal",
+    "Web Apps Senegal",
+    "App Development Senegal",
+    "UI/UX Design Senegal",
+    "Custom Development Senegal",
+    "SEO Optimization Senegal",
+    "Mobile App Development",
+    "UX/UI Design Senegal",
+    "Web Agency Senegal",
+    "Backend Development Senegal",
+    "Frontend Development Senegal",
+    "React Development Senegal",
+    "Next.js Development Senegal",
+    "Node.js Development Senegal",
+    "SaaS Development Senegal",
+    "Senegalese Developer",
+    "Meetup Dev Senegal",
+    "Tech Events Senegal",
+    "IT Community Senegal",
   ],
   robots: "index, follow",
-  metadataBase: new URL("https://www.modouaicha023.dev.com"),
+  metadataBase: new URL("https://www.modouaicha023.dev"),
   icons: {
     icon: "/favicon.ico",
   },
   openGraph: {
-    title: "Modou Aicha Diop | Développeur Full Stack au Sénégal",
+    title: "Modou Aicha Diop | Full Stack Developer from Senegal",
     description:
-      "Découvrez mon portfolio en tant que développeur full stack spécialisé en React, Next.js et NestJS. Je crée des solutions web et mobiles innovantes adaptées aux besoins des entreprises et startups.",
+      "Explore my portfolio as a full stack developer specialized in React, Next.js, and NestJS. I create innovative web and mobile solutions tailored to the needs of businesses and startups.",
     url: "https://www.modouaicha023.dev",
     siteName: "Modou Aicha Diop - Portfolio",
     type: "website",
-    locale: "fr_FR",
+    locale: "en_US",
     images: [
       {
         url: "https://www.modouaicha023.dev/preview.png",
         width: 1200,
         height: 630,
-        alt: "Portfolio de Modou Aicha Diop - Développeur Full Stack",
+        alt: "Modou Aicha Diop's Portfolio - Full Stack Developer",
       },
     ],
     emails: ["modouaicha023@gmail.com", "modouaichadiop@gmail.com"],
@@ -132,9 +157,9 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     site: "@modouaicha023",
-    title: "Modou Aicha Diop | Développeur Full Stack au Sénégal",
+    title: "Modou Aicha Diop | Full Stack Developer from Senegal",
     description:
-      "Développeur Full Stack spécialisé en React, Next.js et NestJS. Découvrez mes projets et services pour vos besoins en développement web et mobile.",
+      "Full Stack Developer specialized in React, Next.js, and NestJS. Explore my projects and services for your web and mobile development needs.",
     images: ["https://www.modouaicha023.dev/preview.png"],
   },
 };

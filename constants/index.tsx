@@ -15,7 +15,7 @@ export const projects: Project[] = [
     logo: "/projects/lac-rose-excursion-logo.jpg",
     stack: ["NextJS", "Tailwind CSS", "TypeScript"],
     description:
-      "Lac Rose Excursion est un site web développé avec Next.js, Tailwind CSS, et TypeScript pour une entreprise d'excursions. Il permet de découvrir les excursions proposées et de réserver facilement en ligne.",
+      "Lac Rose Excursion is a website developed with Next.js, Tailwind CSS, and TypeScript for a tour company. It allows you to discover the tours offered and easily book online.",
     url: "https://lac-rose-excursion.com?utm_source=modouaicha023&utm_medium=project&utm_campaign=client",
     githubUrl: "#",
     type: "Freelance",

@@ -5,13 +5,13 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Mes Projects | Développeur Full Stack",
+  title: "My Projects | Full Stack Developer",
   description:
-    "Portfolio de Modou Aicha Diop, développeur full stack spécialisé en React, Next.js et NestJS. Découvrez mes projets, compétences et services en développement web et mobile au Sénégal.",
+    "Explore my portfolio and see the projects I’ve worked on as a Full Stack Developer in Senegal.",
   openGraph: {
-    title: "Modou Aicha Diop | Développeur Full Stack au Sénégal",
+    title: "Modou Aicha Diop | Full Stack Developer from Senegal",
     description:
-      "Découvrez mon portfolio en tant que développeur full stack spécialisé en React, Next.js et NestJS. Je crée des solutions web et mobiles innovantes adaptées aux besoins des entreprises et startups.",
+      "Discover the skills and projects of Modou Aicha Diop, a Full Stack Developer based in Senegal.",
     url: "https://www.modouaicha023.dev",
     siteName: "Modou Aicha Diop - Portfolio",
     images: [
@@ -19,10 +19,10 @@ export const metadata: Metadata = {
         url: "https://www.modouaicha023.dev/preview.png",
         width: 1200,
         height: 630,
-        alt: "Portfolio de Modou Aicha Diop - Développeur Full Stack",
+        alt: "Modou Aicha Diop's Portfolio - Full Stack Developer",
       },
     ],
-    locale: "fr_FR",
+    locale: "en_US",
     type: "website",
   },
 };

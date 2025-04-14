@@ -16,18 +16,20 @@ export async function generateMetadata(props: {
 
   if (!project) {
     return {
-      title: "Projet introuvable",
-      description: "Aucune description disponible pour ce projet.",
+      title: "Project Not Found",
+      description: "No description available for this project.",
     };
   }
 
   return {
     title: project.name,
-    description: project?.description?.substring(0, 160),
+    description:
+      project?.description?.substring(0, 160) || "No description available.",
     openGraph: {
-      title: project.description,
-      description: project?.description?.substring(0, 160),
-      url: `https://www.modouaicha023.dev/projects/${params.slug}`,
+      title: project.name,
+      description:
+        project?.description?.substring(0, 160) || "No description available.",
+      url: `https://www.modouaicha023.dev/projects/${slug}`,
       images: [
         {
           url: project.logo || "/logo.png",

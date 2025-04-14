@@ -3,7 +3,7 @@ import { projects } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function ProjectsPage() {
+export default function AdminProjectsPage() {
   return (
     <section className="max-w-4xl mx-auto ">
       <header className="mb-8">
