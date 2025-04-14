@@ -2,15 +2,44 @@ export const frontMatter = {
   title: "Galsen Mangas",
   date: "2025-04-13",
   author: "Modou A.",
-  tags: ["modouaicha023","sénégal", "projet", "nextjs"]
+  tags: ["modouaicha023", "senegal", "project", "nextjs", "manga", "anime"],
+  slug: "galsen-mangas",
+  coverImage: "/projects/galsen-mangas.png",
+  logo: "/projects/galsen-mangas-logo.png",
+  url: "https://galsen-mangas.vercel.app",
+  githubUrl: "https://github.com/modouaicha023/galsen-mangas",
+  type: "Personal",
 };
 
-# {props.project.name}
-<p>{props.project.description}</p>
-## 🛠️ Stack Technique
+import Image from 'next/image'
+import Link from 'next/link'
+
+# Galsen Mangas
+
+<Image
+  src="/projects/galsen-mangas.png"
+  alt="Screenshot of Galsen Mangas"
+  width={1200}
+  height={630}
+  className="rounded-xl my-4"
+/>
+
+**Galsen Mangas** is a web application that provides **free access to anime, manga, and light novels**, all in one place. Developed as a **personal project**, it delivers a smooth and enjoyable experience for fans of Japanese entertainment, with a clean interface and responsive design.
+
+This project reflects a passion for manga culture and tech, showcasing how a fast, accessible platform can enhance media consumption for users around the world — especially in Senegal and the broader Francophone community.
+
+## 🚀 Live Project
+
+- 🌐 Website: [galsen-mangas.vercel.app](https://galsen-mangas.vercel.app)
+- 💻 Source Code: [GitHub - Galsen Mangas](https://github.com/modouaicha023/galsen-mangas)
+
+## 🛠️ Tech Stack
 
 <ul>
-{props.project.stack.map((st,i)=>(
-    <li key={i}>{st}</li>
-))}
+  <li>Next.js</li>
+  <li>TypeScript</li>
 </ul>
+
+## 📌 Project Type
+
+**Personal project** developed to offer a seamless and enjoyable digital content experience, combining modern web technologies.

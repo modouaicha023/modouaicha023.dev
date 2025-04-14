@@ -2,15 +2,41 @@ export const frontMatter = {
   title: "Game of Life",
   date: "2025-04-13",
   author: "Modou A.",
-  tags: ["modouaicha023","sénégal", "projet", "nextjs"]
+  tags: ["modouaicha023", "senegal", "project", "javascript"],
+  slug: "game-of-life",
+  coverImage: "/projects/game-of-life.png",
+  logo: "/projects/game-of-life-logo.png",
+  url: "https://modouaicha023.github.io/GameOfLife",
+  githubUrl: "https://github.com/modouaicha023/GameOfLife",
+  type: "Personal",
 };
 
-# {props.project.name}
-<p>{props.project.description}</p>
-## 🛠️ Stack Technique
+import Image from 'next/image'
+import Link from 'next/link'
+
+# Game of Life
+
+<Image
+  src="/projects/game-of-life.png"
+  alt="Game of Life Screenshot"
+  width={1200}
+  height={630}
+  className="rounded-xl my-4"
+/>
+
+**Game of Life** is a simulation project based on the famous **cellular automaton** devised by British mathematician **John Horton Conway** in 1970.
+
+The game demonstrates how complex patterns and behaviors can emerge from simple rules on a grid of cells. This version was built using pure **JavaScript**, **HTML**, and **CSS**. It features a dynamic board that evolves generation after generation based on initial conditions set by the user.
+
+## 🚀 Live Project
+
+- 🌐 [Visit the app](https://modouaicha023.github.io/GameOfLife)
+- 💻 [Source code on GitHub](https://github.com/modouaicha023/GameOfLife)
+
+## 🛠️ Tech Stack
 
 <ul>
-{props.project.stack.map((st,i)=>(
-    <li key={i}>{st}</li>
-))}
+  <li>JavaScript</li>
+  <li>HTML</li>
+  <li>CSS</li>
 </ul>

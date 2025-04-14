@@ -2,17 +2,48 @@ export const frontMatter = {
   title: "Sama Car",
   date: "2025-04-13",
   author: "Modou A.",
-  tags: ["modouaicha023","sénégal", "projet", "nextjs"]
+  tags: ["modouaicha023", "senegal", "project", "react", "tailwind"],
+  slug: "sama-car",
+  coverImage: "/projects/sama-car.png",
+  logo: "/projects/sama-car-logo.png",
+  url: "https://sama-car.vercel.app",
+  githubUrl: "https://github.com/modouaicha023/sama-car",
+  type: "Personal",
 };
 
+import Image from 'next/image'
+import Link from 'next/link'
 
-# {props.project.name}
-<p>{props.project.description}</p>
+# Sama Car
 
-## 🛠️ Stack Technique
+<Image
+  src="/projects/sama-car.png"
+  alt="Preview of the Sama Car landing page"
+  width={1200}
+  height={630}
+  className="rounded-xl my-4"
+/>
+
+**Sama Car** is a modern and responsive landing page designed for a car business. Built as a **personal project** using **React** and **Tailwind CSS**, the website aims to present the business and its services in a sleek, professional, and visually appealing way.
+
+The minimalist design highlights the offerings while ensuring fast load times and mobile compatibility — perfect for making a strong first impression online.
+
+## 🚀 Live Project
+
+- 🌐 Website: [sama-car.vercel.app](https://sama-car.vercel.app)
+- 💻 Source Code: [GitHub - Sama Car](https://github.com/modouaicha023/sama-car)
+
+## 🛠️ Tech Stack
 
 <ul>
-{props.project.stack.map((st,i)=>(
-    <li key={i}>{st}</li>
-))}
+  <li>React</li>
+  <li>Tailwind CSS</li>
 </ul>
+
+## 📌 Project Type
+
+**Personal project** built to practice clean UI development, responsiveness, and component-based architecture.
+
+---
+
+Need something similar for another project? Just drop it in!
