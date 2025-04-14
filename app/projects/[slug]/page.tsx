@@ -47,24 +47,24 @@ export default async function ProjectDetailPage({
 }) {
   const { slug } = await params;
   const mdxPath = path.resolve(`content/projects/${slug}.mdx`);
-
   if (!fs.existsSync(mdxPath)) {
     notFound();
   }
 
   let ProjectMdx;
+  let frontMatter = {};
+
   try {
-    const { default: MdxComponent } = await import(
-      `@/content/projects/${slug}.mdx`
-    );
-    ProjectMdx = MdxComponent;
+    // Import the MDX file
+    const mdxModule = await import(`@/content/projects/${slug}.mdx`);
+    ProjectMdx = mdxModule.default;
+    frontMatter = mdxModule.frontMatter || {};
   } catch (error) {
     console.error(error);
     notFound();
   }
 
   const project = projects.find((p) => p.slug === slug);
-
   if (!project) {
     notFound();
   }
