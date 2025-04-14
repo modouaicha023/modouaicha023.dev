@@ -18,7 +18,7 @@ export default function ProjectDetail({ project }: { project: Project }) {
       <div className="flex items-center gap-x-4 ">
         <Link
           href={project?.githubUrl || "#"}
-          target="_blank"
+          target={project?.githubUrl === "#" ? "_self" : "_blank"}
           className="flex justify-center sm:text-start gap-x-2 items-center px-4 w-full py-2 rounded-lg dark:bg-zinc-800 hover:dark:bg-zinc-900 hover:bg-pink-200 bg-pink-100  
           border border-zinc-100 hover:border-gray-400 dark:border-zinc-800 focus:outline-none focus:border-gray-400"
         >
@@ -27,7 +27,7 @@ export default function ProjectDetail({ project }: { project: Project }) {
         </Link>
         <Link
           href={project?.url || "#"}
-          target="_blank"
+          target={project?.githubUrl === "#" ? "_self" : "_blank"}
           className="w-full justify-center sm:text-start flex gap-x-2 items-center px-4 py-2 rounded-lg dark:bg-zinc-800 hover:dark:bg-zinc-900 hover:bg-pink-200 bg-pink-100 border border-zinc-100 hover:border-gray-400 dark:border-zinc-800 focus:outline-none focus:border-gray-400"
         >
           <ExternalLink className="w-4 h-4" />

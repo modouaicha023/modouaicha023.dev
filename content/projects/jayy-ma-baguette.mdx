@@ -11,7 +11,7 @@ export const frontMatter = {
 ## 🛠️ Stack Technique
 
 <ul>
-{props.project.stack.map((st)=>(
-      <li>{st}</li>
+{props.project.stack.map((st,i)=>(
+    <li key={i}>{st}</li>
 ))}
 </ul>
