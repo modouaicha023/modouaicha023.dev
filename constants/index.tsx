@@ -1,5 +1,5 @@
 import { Icons } from "@/components/icons";
-import { Project, NavbarLink, SocialLink, Stack } from "@/types";
+import { Project, NavbarLink, SocialLink, Stack, CarouselItem } from "@/types";
 import {
   Contact,
   GalleryHorizontalEnd,
@@ -267,4 +267,22 @@ export const stacks: Stack[] = [
     title: "MongoDB",
     icon: Icons.mongodb,
   },
+];
+
+export const carouselItems: CarouselItem[] = [
+  {
+    description: "",
+    id: "1",
+    imgSrc: "/mo.jpg",
+    title: "Modou",
+    url: "/mo.jpg",
+  },
+  {
+    description: "",
+    id: "2",
+    imgSrc: "/modou-aicha-diop.png",
+    title: "Modou",
+    url: "/modou-aicha-diop.png",
+  },
+ 
 ];

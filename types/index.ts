@@ -1,4 +1,5 @@
 import { LucideIcon } from "lucide-react";
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
 export interface Project {
   name: string;
@@ -31,3 +32,11 @@ export interface Stack {
   title: string;
   icon: LucideIcon;
 }
+
+export type CarouselItem = {
+  url: string | StaticImport;
+  id: string;
+  imgSrc: string;
+  title: string;
+  description: string;
+};
