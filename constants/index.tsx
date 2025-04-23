@@ -271,18 +271,20 @@ export const stacks: Stack[] = [
 
 export const carouselItems: CarouselItem[] = [
   {
-    description: "",
-    id: "1",
-    imgSrc: "/mo.jpg",
     title: "Modou",
     url: "/mo.jpg",
   },
   {
-    description: "",
-    id: "2",
-    imgSrc: "/modou-aicha-diop.png",
     title: "Modou",
     url: "/modou-aicha-diop.png",
   },
- 
+  {
+    title: "Modou",
+    url: "/solo-leveling.JPG",
+  },
+  {
+    title: "Modou",
+    url: "/modouaicha.JPG",
+  },
+  { title: "dkd", url: "/sololeveling.jpg" },
 ];

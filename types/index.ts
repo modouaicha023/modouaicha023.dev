@@ -35,8 +35,5 @@ export interface Stack {
 
 export type CarouselItem = {
   url: string | StaticImport;
-  id: string;
-  imgSrc: string;
   title: string;
-  description: string;
 };

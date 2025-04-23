@@ -6,12 +6,14 @@ import Image from "next/image";
 import { carouselItems } from "@/constants";
 
 function Carousel() {
-  const [activeItem, setActiveItem] = useState(carouselItems[0]);
   const [width, setWidth] = useState(0);
   const carousel = useRef<HTMLDivElement | null>(null);
+
   useEffect(() => {
-    setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
-  }, [carousel]);
+    if (carousel.current) {
+      setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
+    }
+  }, []);
 
   return (
     <div className="w-full overflow-hidden">
@@ -25,19 +27,17 @@ function Carousel() {
         transition={{ duration: 0.2, ease: "easeInOut" }}
         className="flex will-change-transform cursor-grab active:cursor-grabbing"
       >
-        {carouselItems.slice(0, 8)?.map((itemData, index) => {
-          return (
-            <motion.div className="min-w-[20rem] min-h-[25rem] p-2" key={index}>
-              <Image
-                src={itemData?.url}
-                width={400}
-                height={400}
-                alt="img"
-                className="w-[250px] h-[350px] object-fill pointer-events-none  rounded-md grayscale"
-              />
-            </motion.div>
-          );
-        })}
+        {carouselItems.slice(0, 8)?.map((itemData, index) => (
+          <motion.div className="min-w-[20rem] min-h-[25rem] p-2" key={index}>
+            <Image
+              src={itemData?.url}
+              width={400}
+              height={400}
+              alt={itemData.title + "| Photo of Modou Aicha Diop"}
+              className="w-[250px] h-[350px] object-fill pointer-events-none rounded-md grayscale"
+            />
+          </motion.div>
+        ))}
       </motion.div>
     </div>
   );
