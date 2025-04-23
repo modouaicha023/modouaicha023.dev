@@ -1,7 +1,6 @@
 import Carousel from "@/components/carousel";
 import SocialMedia from "@/components/social-media";
 import { Metadata } from "next";
-import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "About me | Full Stack Developer",
@@ -32,7 +31,9 @@ export default function AboutPage() {
       <div className="flex flex-col gap-4 justify-center items-center mx-auto">
         <div className="flex flex-col max-w-2xl">
           <h1 className="text-4xl sm:text-5xl font-bold max-w-lg tracking-tight mb-6 lg:leading-[3.7rem] leading-tight lg:min-w-[700px] min-w-full">
-            I'm Modou Aicha Diop 🙋🏿‍♂️, a boy from Dakar 🇸🇳 building cool things.
+            {
+              " I'm Modou Aicha Diop 🙋🏿‍♂️, a boy from Dakar 🇸🇳 building cool things."
+            }
           </h1>
           <p className="text-justify dark:text-zinc-400 text-zinc-600 leading-relaxed">
             {

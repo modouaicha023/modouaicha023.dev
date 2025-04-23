@@ -270,21 +270,13 @@ export const stacks: Stack[] = [
 ];
 
 export const carouselItems: CarouselItem[] = [
-  {
-    title: "Modou",
-    url: "/mo.jpg",
-  },
-  {
-    title: "Modou",
-    url: "/modou-aicha-diop.png",
-  },
-  {
-    title: "Modou",
-    url: "/solo-leveling.JPG",
-  },
-  {
-    title: "Modou",
-    url: "/modouaicha.JPG",
-  },
-  { title: "dkd", url: "/sololeveling.jpg" },
+  { title: "Modou Aicha Diop", url: "/mo.jpg" },
+  { title: "Modou Aicha Diop", url: "/modou-aicha-diop.png" },
+  { title: "Modou Aicha Diop", url: "/solo-leveling.JPG" },
+  { title: "Modou Aicha Diop", url: "/modouaicha.JPG" },
+  { title: "Modou Aicha Diop", url: "/sololeveling.jpg" },
+  { title: "Modou Aicha Diop", url: "/modouaichadiop1.png" },
+  { title: "Modou Aicha Diop", url: "/mojinwoo.png" },
+  { title: "Modou Aicha Diop", url: "/modouaicha0023.jpeg" },
+  { title: "Modou Aicha Diop", url: "/modouaicha023diop.jpg" },
 ];
