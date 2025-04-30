@@ -4,8 +4,10 @@ import React, { useEffect, useRef, useState } from "react";
 import { motion } from "motion/react";
 import Image from "next/image";
 import { carouselItems } from "@/constants";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
-function Carousel() {
+const CarouselSection = () => {
   const [width, setWidth] = useState(0);
   const carousel = useRef<HTMLDivElement | null>(null);
 
@@ -17,15 +19,58 @@ function Carousel() {
 
   return (
     <div className="w-full overflow-hidden">
-      <motion.div
-        ref={carousel}
-        drag="x"
-        whileDrag={{ scale: 0.95 }}
-        dragElastic={0.2}
-        dragConstraints={{ right: 0, left: -width }}
-        dragTransition={{ bounceDamping: 30 }}
-        transition={{ duration: 0.2, ease: "easeInOut" }}
-        className="flex will-change-transform cursor-grab active:cursor-grabbing"
+      <Carousel
+        additionalTransfrom={0}
+        arrows={false}
+        autoPlaySpeed={1000}
+        centerMode={false}
+        className=""
+        containerClass="container"
+        dotListClass=""
+        draggable
+        focusOnSelect
+        infinite
+        itemClass=""
+        keyBoardControl
+        minimumTouchDrag={80}
+        pauseOnHover
+        renderArrowsWhenDisabled={false}
+        renderButtonGroupOutside={false}
+        renderDotsOutside={false}
+        responsive={{
+          desktop: {
+            breakpoint: {
+              max: 3000,
+              min: 1024,
+            },
+            items: 3,
+            partialVisibilityGutter: 40,
+          },
+          mobile: {
+            breakpoint: {
+              max: 464,
+              min: 0,
+            },
+            items: 1,
+            partialVisibilityGutter: 30,
+          },
+          tablet: {
+            breakpoint: {
+              max: 1024,
+              min: 464,
+            },
+            items: 2,
+            partialVisibilityGutter: 30,
+          },
+        }}
+        rewind={false}
+        rewindWithAnimation={false}
+        rtl={false}
+        shouldResetAutoplay
+        showDots
+        sliderClass=""
+        slidesToSlide={1}
+        swipeable
       >
         {carouselItems.slice(0, 8)?.map((itemData, index) => (
           <motion.div className="min-w-[20rem] min-h-[25rem] p-2" key={index}>
@@ -38,9 +83,9 @@ function Carousel() {
             />
           </motion.div>
         ))}
-      </motion.div>
+      </Carousel>
     </div>
   );
-}
+};
 
-export default Carousel;
+export default CarouselSection;

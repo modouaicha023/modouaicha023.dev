@@ -24,9 +24,5 @@ export const metadata: Metadata = {
 };
 
 export default function BlogPage() {
-  return (
-    <div>
-      <h1>blog</h1>
-    </div>
-  );
+  return <div className="flex items-center justify-center">soon...</div>;
 }

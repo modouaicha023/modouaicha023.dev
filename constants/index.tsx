@@ -1,11 +1,6 @@
 import { Icons } from "@/components/icons";
 import { Project, NavbarLink, SocialLink, Stack, CarouselItem } from "@/types";
-import {
-  Contact,
-  GalleryHorizontalEnd,
-  Home,
-  SquareChartGantt,
-} from "lucide-react";
+import { GalleryHorizontalEnd, Home, SquareLibrary, User } from "lucide-react";
 
 export const projects: Project[] = [
   {
@@ -113,7 +108,7 @@ export const navbarLinks: NavbarLink[] = [
   {
     title: "about",
     href: "/about",
-    icon: SquareChartGantt,
+    icon: User,
   },
   {
     title: "projects",
@@ -121,9 +116,9 @@ export const navbarLinks: NavbarLink[] = [
     icon: GalleryHorizontalEnd,
   },
   {
-    title: "contact",
-    href: "/contact",
-    icon: Contact,
+    title: "blog",
+    href: "/blog",
+    icon: SquareLibrary,
   },
 ];
 
@@ -277,6 +272,5 @@ export const carouselItems: CarouselItem[] = [
   { title: "Modou Aicha Diop", url: "/sololeveling.jpg" },
   { title: "Modou Aicha Diop", url: "/modouaichadiop1.png" },
   { title: "Modou Aicha Diop", url: "/mojinwoo.png" },
-  { title: "Modou Aicha Diop", url: "/modouaicha0023.jpeg" },
   { title: "Modou Aicha Diop", url: "/modouaicha023diop.jpg" },
 ];

@@ -1,4 +1,4 @@
-import Carousel from "@/components/carousel";
+import CarouselSection from "@/components/carousel";
 import SocialMedia from "@/components/social-media";
 import { Metadata } from "next";
 
@@ -55,7 +55,7 @@ export default function AboutPage() {
         </div>
       </div>
       <div className="relative w-full xl:w-[350px] h-[400px]">
-        <Carousel />
+        <CarouselSection />
 
         {/* <Image
           src="/mo.jpg"
