@@ -11,7 +11,8 @@ const CarouselSection = () => {
     <div className="w-full overflow-hidden">
       <Carousel
         additionalTransfrom={0}
-        autoPlaySpeed={3}
+        autoPlaySpeed={5000}
+        autoPlay
         arrows={false}
         centerMode={false}
         className=""
@@ -63,7 +64,7 @@ const CarouselSection = () => {
         slidesToSlide={1}
         swipeable
       >
-        {carouselItems.slice(0, 8)?.map((itemData, index) => (
+        {carouselItems.map((itemData, index) => (
           <motion.div className="min-w-[20rem] min-h-[25rem] p-2" key={index}>
             <Image
               src={itemData?.url}
