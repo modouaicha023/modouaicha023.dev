@@ -1,6 +1,5 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
 import { motion } from "motion/react";
 import Image from "next/image";
 import { carouselItems } from "@/constants";
@@ -8,21 +7,12 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 const CarouselSection = () => {
-  const [width, setWidth] = useState(0);
-  const carousel = useRef<HTMLDivElement | null>(null);
-
-  useEffect(() => {
-    if (carousel.current) {
-      setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
-    }
-  }, []);
-
   return (
     <div className="w-full overflow-hidden">
       <Carousel
         additionalTransfrom={0}
+        autoPlaySpeed={3}
         arrows={false}
-        autoPlaySpeed={1000}
         centerMode={false}
         className=""
         containerClass="container"
@@ -33,6 +23,7 @@ const CarouselSection = () => {
         itemClass=""
         keyBoardControl
         minimumTouchDrag={80}
+        partialVisible
         pauseOnHover
         renderArrowsWhenDisabled={false}
         renderButtonGroupOutside={false}
@@ -67,7 +58,7 @@ const CarouselSection = () => {
         rewindWithAnimation={false}
         rtl={false}
         shouldResetAutoplay
-        showDots
+        showDots={false}
         sliderClass=""
         slidesToSlide={1}
         swipeable

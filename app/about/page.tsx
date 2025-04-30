@@ -54,7 +54,7 @@ export default function AboutPage() {
           <SocialMedia />
         </div>
       </div>
-      <div className="relative w-full xl:w-[350px] h-[400px]">
+      <div className="relative w-full xl:w-[350px] h-[400px] max-w-7xl">
         <CarouselSection />
 
         {/* <Image
