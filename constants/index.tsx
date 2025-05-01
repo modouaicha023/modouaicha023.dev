@@ -4,14 +4,14 @@ import { GalleryHorizontalEnd, Home, SquareLibrary, User } from "lucide-react";
 
 export const projects: Project[] = [
   {
-    name: "Quad Lac Rose ",
+    name: "Quad Lac Rose",
     slug: "quadlacrose",
     coverImage: "/projects/quadlacrose.png",
     logo: "/projects/quadlacrose-logo.jpg",
     stack: ["NextJS", "Tailwind CSS", "TypeScript"],
     description:
-      "Quad Lac Rose is a website developed with Next.js, Tailwind CSS, and TypeScript for a tour company. It allows you to discover the tours offered and easily book online.",
-    url: "https://https://www.quadlacrose.com?utm_source=modouaicha023&utm_medium=project&utm_campaign=client",
+      "Quad Lac Rose is a dynamic booking website built for a quad rental company operating around the Lac Rose area. Developed with Next.js, Tailwind CSS, and TypeScript, it provides an intuitive interface to explore different quad tours and make online reservations with ease.",
+    url: "https://www.quadlacrose.com?utm_source=modouaicha023&utm_medium=project&utm_campaign=client",
     githubUrl: "#",
     type: "Freelance",
   },
@@ -22,11 +22,12 @@ export const projects: Project[] = [
     logo: "/projects/lac-rose-excursion-logo.jpg",
     stack: ["NextJS", "Tailwind CSS", "TypeScript"],
     description:
-      "Lac Rose Excursion is a website developed with Next.js, Tailwind CSS, and TypeScript for a tour company. It allows you to discover the tours offered and easily book online.",
+      "Lac Rose Excursion is a modern website crafted for a local excursion company offering guided tours around Lac Rose. Leveraging Next.js, Tailwind CSS, and TypeScript, the platform enables users to discover available excursions and book their experiences directly online.",
     url: "https://lac-rose-excursion.com?utm_source=modouaicha023&utm_medium=project&utm_campaign=client",
     githubUrl: "#",
     type: "Freelance",
   },
+
   {
     name: "Galsen Mangas",
     slug: "galsen-mangas",
