@@ -4,6 +4,18 @@ import { GalleryHorizontalEnd, Home, SquareLibrary, User } from "lucide-react";
 
 export const projects: Project[] = [
   {
+    name: "Quad Lac Rose ",
+    slug: "quadlacrose",
+    coverImage: "/projects/quadlacrose.png",
+    logo: "/projects/quadlacrose-logo.jpg",
+    stack: ["NextJS", "Tailwind CSS", "TypeScript"],
+    description:
+      "Quad Lac Rose is a website developed with Next.js, Tailwind CSS, and TypeScript for a tour company. It allows you to discover the tours offered and easily book online.",
+    url: "https://https://www.quadlacrose.com?utm_source=modouaicha023&utm_medium=project&utm_campaign=client",
+    githubUrl: "#",
+    type: "Freelance",
+  },
+  {
     name: "Lac Rose Excursion",
     slug: "lac-rose-excursion",
     coverImage: "/projects/lac-rose-excursion.png",
