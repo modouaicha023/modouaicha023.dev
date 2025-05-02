@@ -41,7 +41,7 @@ export default function ProjectsPage() {
       </header>
       <div className="mb-8">
         <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight text-zinc-800 dark:text-white mb-4">
-          Personnal projects
+          Personnal
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {projects
@@ -69,9 +69,9 @@ export default function ProjectsPage() {
                       <span className="text-sm sm:text-xl font-semibold text-zinc-900 dark:text-white group-hover:underline">
                         {project.name}
                       </span>
-                      <span className=" ml-2 font-mono text-xs sm:text-sm text-zinc-600 dark:text-zinc-400">
+                      {/* <span className=" ml-2 font-mono text-xs sm:text-sm text-zinc-600 dark:text-zinc-400">
                         {project.type}
-                      </span>
+                      </span> */}
                     </h2>
                     <p className="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 line-clamp-2 sm:line-clamp-2 mt-2">
                       {project.description}
@@ -84,7 +84,7 @@ export default function ProjectsPage() {
       </div>
       <div>
         <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight text-zinc-800 dark:text-white mb-4">
-          Freelance projects
+          Works
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {projects
@@ -112,9 +112,9 @@ export default function ProjectsPage() {
                       <span className="text-sm sm:text-xl font-semibold text-zinc-900 dark:text-white group-hover:underline">
                         {project.name}
                       </span>
-                      <span className=" ml-2 font-mono text-xs sm:text-sm text-zinc-600 dark:text-zinc-400">
+                      {/* <span className=" ml-2 font-mono text-xs sm:text-sm text-zinc-600 dark:text-zinc-400">
                         {project.type}
-                      </span>
+                      </span> */}
                     </h2>
                     <p className="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 line-clamp-2 sm:line-clamp-2 mt-2">
                       {project.description}
