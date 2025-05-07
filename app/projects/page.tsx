@@ -101,8 +101,8 @@ export default function ProjectsPage() {
                     <Image
                       src={project.logo}
                       alt={project.name + " | Modou Aicha Diop"}
-                      width={96}
-                      height={96}
+                      width={1280}
+                      height={1280}
                       className="w-16 h-16 sm:w-24 sm:h-24 rounded-lg object-cover"
                     />
                   </div>
