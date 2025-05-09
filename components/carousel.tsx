@@ -13,7 +13,7 @@ const CarouselSection = () => {
         additionalTransfrom={0}
         autoPlaySpeed={5000}
         autoPlay
-        arrows={false}
+        arrows={true}
         centerMode={false}
         className=""
         containerClass="container"
@@ -27,7 +27,7 @@ const CarouselSection = () => {
         partialVisible
         pauseOnHover
         renderArrowsWhenDisabled={false}
-        renderButtonGroupOutside={false}
+        renderButtonGroupOutside={true}
         renderDotsOutside={false}
         responsive={{
           desktop: {
