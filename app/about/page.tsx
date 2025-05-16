@@ -32,25 +32,24 @@ export default function AboutPage() {
       <div className="flex flex-col gap-4 justify-center items-center mx-auto">
         <div className="flex flex-col max-w-2xl">
           <h1 className="text-4xl sm:text-5xl font-bold max-w-lg tracking-tight mb-6 lg:leading-[3.7rem] leading-tight lg:min-w-[700px] min-w-full">
-            {
-              " I'm Modou Aicha Diop 🙋🏿‍♂️, a boy from Dakar 🇸🇳 building cool things."
-            }
+            {"Hi, I’m Modou Aicha Diop 🙋🏿‍♂️ from  🇸🇳  & i build cool stuff."}
           </h1>
           <p className="text-justify dark:text-zinc-400 text-zinc-600 leading-relaxed">
             {
-              "I’m software developer based in Dakar, Senegal. I love building digital products that solve real problems and improve people’s lives. With a strong foundation in web technologies like React, TypeScript, and Node.js, I’ve worked on a variety of projects — from dynamic web apps to full-stack platforms — always with a focus on clean code, great user experience, and continuous learning."
+              "I’m a software developer in Dakar, Senegal. I love making digital solutions that actually help people."
             }
           </p>
           <p className="mt-3 text-justify dark:text-zinc-400 text-zinc-600 leading-relaxed">
             {
-              "When I’m not coding, you’ll probably find me deep into a manga 📖, catching up on the latest anime, or shooting hoops on the basketball court 🏀. These passions fuel my creativity and give me fresh perspectives when tackling challenges in tech. I believe in building things that are not only useful and impactful, but also inspired by the things that bring me joy😁."
+              "When I’m not coding, I love reading manga 📖, watching anime, and playing basketball 🏀. These hobbies inspire me and spark fresh ideas for my projects."
             }
           </p>
         </div>
         <div className="flex flex-col w-full items-start max-w-2xl">
           <p className="w-full">
+            Find me as{" "}
             <span className="tracking-wide underline">@modouaicha023</span> on
-            all platforms
+            all platforms.
           </p>
           <SocialMedia />
         </div>
