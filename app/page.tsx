@@ -29,7 +29,9 @@ export default function HomePage() {
   return (
     <>
       <Hero />
-      <Works />
+      <section className="max-w-4xl sm:pl-8">
+        <Works />
+      </section>
     </>
   );
 }
