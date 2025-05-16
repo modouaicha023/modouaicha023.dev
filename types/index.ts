@@ -37,3 +37,15 @@ export type CarouselItem = {
   url: string | StaticImport;
   title: string;
 };
+
+export interface Work {
+  company: string;
+  slug: string;
+  link: string;
+  badges: string[];
+  title: string;
+  logo: string;
+  start: string;
+  end: string;
+  description: string;
+}

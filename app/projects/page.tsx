@@ -1,4 +1,5 @@
 import { ProjectJsonLd } from "@/components/json-ld";
+import Works from "@/components/sections/works";
 import { projects } from "@/constants";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -84,7 +85,7 @@ export default function ProjectsPage() {
       </div>
       <div>
         <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight text-zinc-800 dark:text-white mb-4">
-          Works
+          Freelance
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {projects
@@ -125,6 +126,8 @@ export default function ProjectsPage() {
             ))}
         </div>
       </div>
+
+      <Works />
     </section>
   );
 }

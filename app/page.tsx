@@ -1,4 +1,5 @@
 import Hero from "@/components/sections/hero";
+import Works from "@/components/sections/works";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -28,7 +29,7 @@ export default function HomePage() {
   return (
     <>
       <Hero />
-      {/* <Projects /> */}
+      <Works />
     </>
   );
 }

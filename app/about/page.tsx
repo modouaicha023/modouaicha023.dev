@@ -1,5 +1,6 @@
-import CarouselSection from "@/components/carousel";
+import CarouselSection from "@/components/sections/carousel";
 import SocialMedia from "@/components/social-media";
+import { carouselItems } from "@/constants";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -54,16 +55,8 @@ export default function AboutPage() {
           <SocialMedia />
         </div>
       </div>
-      <div className="relative w-full xl:w-[350px] h-[400px] max-w-7xl">
-        <CarouselSection />
-
-        {/* <Image
-          src="/mo.jpg"
-          alt="Modou Aicha Diop"
-          width={1280}
-          height={1280}
-          className="w-[500px] h-[520px] object-fill rounded-lg"
-        /> */}
+      <div className="relative w-full xl:w-[350px] h-[400px] max-w-7xl mx-auto">
+        <CarouselSection images={carouselItems} />
       </div>
     </section>
   );

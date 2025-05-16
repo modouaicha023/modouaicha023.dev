@@ -1,6 +1,19 @@
 import { Icons } from "@/components/icons";
-import { Project, NavbarLink, SocialLink, Stack, CarouselItem } from "@/types";
-import { GalleryHorizontalEnd, Home, SquareLibrary, User } from "lucide-react";
+import {
+  Project,
+  NavbarLink,
+  SocialLink,
+  Stack,
+  CarouselItem,
+  Work,
+} from "@/types";
+import {
+  Building2,
+  GalleryHorizontalEnd,
+  Home,
+  SquareLibrary,
+  User,
+} from "lucide-react";
 
 export const projects: Project[] = [
   {
@@ -150,6 +163,45 @@ export const projects: Project[] = [
   //   githubUrl: "https://github.com/modouaicha023/sen-coffee",
   //   type: "Personal",
   // },
+];
+
+export const works: Work[] = [
+  {
+    company: "AKASSAA",
+    link: "https://akassaa.com",
+    badges: ["Hybrid"],
+    title: "Full Stack Developer",
+    logo: "/works/akassaa.png",
+    start: "01/2024",
+    end: "03/2025",
+    description:
+      "Engaged in various projects utilizing Odoo, NestJS, and Next.js frameworks, alongside working on WordPress websites.",
+    slug: "akassaa",
+  },
+  {
+    company: "Creations Design Studio",
+    link: "https://fr.linkedin.com/company/creations-design-studio",
+    badges: ["Remote"],
+    title: "Full Stack Developer",
+    logo: "/works/creations-design-studio.jpeg",
+    start: "09/2023",
+    end: "10/2023",
+    description:
+      "Development of a Fast Food website with Html, CSS and JavaScript as Frontend and PHP as Backend.",
+    slug: "creations-design-studio",
+  },
+  {
+    company: "FALLATECH",
+    link: "https://fallatech.org",
+    badges: ["On-site"],
+    title: "Frontend Developer",
+    logo: "/works/fallatech.svg",
+    start: "05/2023",
+    end: "07/2023",
+    description:
+      "Development of a henhouse management web application with Html, Css and JavaScript.",
+    slug: "fallatech",
+  },
 ];
 
 export const navbarLinks: NavbarLink[] = [
@@ -322,8 +374,6 @@ export const carouselItems: CarouselItem[] = [
   { title: "Modou Aicha Diop", url: "/mojinwoo.png" },
   { title: "Modou Aicha Diop", url: "/modou-aicha-diop.png" },
   { title: "Modou Aicha Diop", url: "/sololeveling.jpg" },
-  { title: "Modou Aicha Diop", url: "/modouaichadiop1.png" },
-  // { title: "Modou Aicha Diop", url: "/modouaicha023diop.jpg" },
   { title: "Modou Aicha Diop", url: "/solo-leveling.JPG" },
   { title: "Modou Aicha Diop", url: "/modouaicha0230.jpeg" },
   { title: "Modou Aicha Diop", url: "/modouaicha02301.jpeg" },
