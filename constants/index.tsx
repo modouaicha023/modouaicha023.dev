@@ -8,7 +8,7 @@ import {
   Work,
 } from "@/types";
 import {
-  Building2,
+  // Building2,
   GalleryHorizontalEnd,
   Home,
   SquareLibrary,
@@ -16,32 +16,32 @@ import {
 } from "lucide-react";
 
 export const projects: Project[] = [
-  {
-    name: "K.wax Design",
-    // slug: "kwaxdesign",
-    slug: "#",
-    coverImage: "/projects/kwaxdesign.png",
-    logo: "/projects/kwaxdesign-logo.jpg",
-    stack: ["WordPress"],
-    description:
-      "K.wax Design is a handmade furniture brand based in Dakar, Senegal. It blends traditional craftsmanship with vibrant African wax fabrics to create customizable, unique home decor pieces. Each item is 100% handmade and tailored to bring life and color into any space.",
-    url: "https://www.kwaxdesign.com",
-    githubUrl: "#",
-    type: "Freelance",
-  },
-  {
-    name: "Studio Panache",
-    slug: "#",
-    // slug: "studio-panache",
-    coverImage: "/projects/studio-panache.png",
-    logo: "/projects/stuido-panache-logo.jpeg",
-    stack: ["NextJS", "Tailwind CSS", "TypeScript", "Strapi"],
-    description:
-      "Studio Panache is a creative art studio based in Dakar that redefines African design with bold, iconic creations. Merging tradition and pop culture, the studio produces vibrant visuals printed on premium art paper, celebrating a modern, moving Africa.",
-    url: "https://www.studio-panache.com/",
-    githubUrl: "#",
-    type: "Freelance",
-  },
+  // {
+  //   name: "K.wax Design",
+  //   // slug: "kwaxdesign",
+  //   slug: "#",
+  //   coverImage: "/projects/kwaxdesign.png",
+  //   logo: "/projects/kwaxdesign-logo.jpg",
+  //   stack: ["WordPress"],
+  //   description:
+  //     "K.wax Design is a handmade furniture brand based in Dakar, Senegal. It blends traditional craftsmanship with vibrant African wax fabrics to create customizable, unique home decor pieces. Each item is 100% handmade and tailored to bring life and color into any space.",
+  //   url: "https://www.kwaxdesign.com",
+  //   githubUrl: "#",
+  //   type: "Freelance",
+  // },
+  // {
+  //   name: "Studio Panache",
+  //   slug: "#",
+  //   // slug: "studio-panache",
+  //   coverImage: "/projects/studio-panache.png",
+  //   logo: "/projects/stuido-panache-logo.jpeg",
+  //   stack: ["NextJS", "Tailwind CSS", "TypeScript", "Strapi"],
+  //   description:
+  //     "Studio Panache is a creative art studio based in Dakar that redefines African design with bold, iconic creations. Merging tradition and pop culture, the studio produces vibrant visuals printed on premium art paper, celebrating a modern, moving Africa.",
+  //   url: "https://www.studio-panache.com/",
+  //   githubUrl: "#",
+  //   type: "Freelance",
+  // },
 
   {
     name: "Quad Lac Rose",
