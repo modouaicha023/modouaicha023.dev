@@ -36,7 +36,7 @@ export default function AboutPage() {
           </h1>
           <p className="text-justify dark:text-zinc-400 text-zinc-600 leading-relaxed">
             {
-              "I’m a software developer in Dakar, Senegal. I love making digital solutions that actually help people."
+              "I’m a software engineer in Dakar, Senegal. I love making digital solutions that actually help people."
             }
           </p>
           <p className="mt-3 text-justify dark:text-zinc-400 text-zinc-600 leading-relaxed">

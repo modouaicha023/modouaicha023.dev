@@ -1,5 +1,5 @@
 import Hero from "@/components/sections/hero";
-import Works from "@/components/sections/works";
+// import Works from "@/components/sections/works";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -29,9 +29,9 @@ export default function HomePage() {
   return (
     <>
       <Hero />
-      <section className="max-w-4xl sm:pl-8">
+      {/* <section className="max-w-4xl sm:pl-8">
         <Works />
-      </section>
+      </section> */}
     </>
   );
 }

@@ -68,6 +68,18 @@ export const projects: Project[] = [
     type: "Freelance",
   },
   {
+    name: "Njamala",
+    slug: "njamala",
+    coverImage: "/projects/njamala.png",
+    logo: "/projects/njamala-logo.jpg",
+    stack: ["Next.js", "TypeScript"],
+    description:
+      "A full-featured custom e-commerce platform built from scratch using Next.js, featuring a complete storefront and a powerful back-office dashboard. It handles the entire commerce workflow including product management, orders, customers, and business operations in a unified system.",
+    url: "https://www.njamala.com",
+    githubUrl: "#",
+    type: "Personal",
+  },
+  {
     name: "Galsen GitHub Users",
     slug: "galsen-github-users",
     coverImage: "/projects/galsen-github-users.png",
@@ -167,6 +179,18 @@ export const projects: Project[] = [
 
 export const works: Work[] = [
   {
+    company: "TVS MOTORS GAMBIA",
+    link: "https://ablomotors.com",
+    badges: ["Hybrid"],
+    title: "Software Engineer | IT Support",
+    logo: "/works/tvsmotorsgambia.webp",
+    start: "06/2025",
+    end: "Present",
+    description:
+      "Providing software development, Odoo customization, and IT support services to improve business operations and technical infrastructure.",
+    slug: "tvsmotorsgambia",
+  },
+  {
     company: "AKASSAA",
     link: "https://akassaa.com",
     badges: ["Hybrid"],
@@ -216,7 +240,7 @@ export const navbarLinks: NavbarLink[] = [
     icon: User,
   },
   {
-    title: "projects",
+    title: "my works",
     href: "/projects",
     icon: GalleryHorizontalEnd,
   },

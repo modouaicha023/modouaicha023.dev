@@ -18,12 +18,14 @@ export default function Hero() {
         <div className="flex flex-col gap-4 justify-center items-center mx-auto">
           <div className="flex flex-col max-w-2xl">
             <h1 className="text-4xl sm:text-5xl font-bold max-w-lg tracking-tight mb-6 lg:leading-[3.7rem] leading-tight lg:min-w-[700px] min-w-full">
-              Software Developer, Freelancer & soon Tech Content Creator⏳
+              Software Engineer
             </h1>
+
             <p className="text-base dark:text-zinc-400 text-zinc-600 leading-relaxed">
-              Hey, I&apos;m <ScrambleText>Modou Aicha</ScrambleText> — a
-              self-taught developer and freelancer passionate about building
-              apps, crafting helpful dev content, and empowering others in tech.
+              Hey I&apos;m <ScrambleText>Modou Aicha</ScrambleText>, a
+              passionate self-taught software engineer building high-performance
+              web applications, ERP systems with Odoo, and robust backend
+              solutions.
             </p>
           </div>
           <div className="flex flex-col w-full items-start max-w-2xl">
@@ -56,32 +58,27 @@ export default function Hero() {
           </audio> */}
           </div>
         </div>
-        <div className="w-full xl:w-[350px] h-[400px] border rounded-lg max-w-2xl overflow-hidden relative">
+        <div className="w-full xl:w-[350px] h-[400px] rounded-lg max-w-2xl overflow-hidden relative">
           <video
             autoPlay
             loop
             muted
             playsInline
-            className="absolute inset-0 w-full h-full object-cover"
+            className="absolute inset-0 w-full h-full object-fill"
           >
-            <source src="/solo.mp4" type="video/mp4" />
-            <source src="/solo.webm" type="video/webm" />
+            <source src="/it.mp4" type="video/mp4" />
+            <source src="/it.webm" type="video/webm" />
             <Image
-              src="/solo.webp"
+              src="/it.webp"
               alt="Modou Aicha Diop"
               width={1280}
               height={1280}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-fill"
             />
           </video>
         </div>
-        <span className="font-italic xl:hidden">
-          {"( I just ❤️ Solo Leveling ) "}
-        </span>
       </section>
-      <div className="font-italic hidden xl:flex items-center justify-end p-4 text-center w-full">
-        {"( I just ❤️ Solo Leveling ) "}
-      </div>
+
     </>
   );
 }
